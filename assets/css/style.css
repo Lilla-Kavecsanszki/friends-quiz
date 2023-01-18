@@ -1,0 +1,27 @@
+*{
+    Padding: 0;
+    Margin: 0; 
+    border: none;
+    Font-Family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #141c1e
+   }
+
+body {
+    background: #f8d649;
+}
+
+/* heading and logo */
+
+h1 {
+    font-family:  'Shadows Into Light', cursive;
+    letter-spacing: 3px;
+    font-size: 500%;
+    padding-left: 10%;
+}
+
+.logo {
+    float: right;
+    margin-top: 2%;
+    margin-right: 0.5%;
+}
