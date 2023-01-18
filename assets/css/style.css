@@ -1,32 +1,85 @@
-*{
+* {
     Padding: 0;
-    Margin: 0; 
+    Margin: 0;
     border: none;
     Font-Family: 'Ubuntu', sans-serif;
     font-weight: 400;
     color: #141c1e
-   }
+}
 
 body {
     background: #f8d649;
 }
 
-/* heading and logo */
+/* top and logo */
 
 h1 {
-    font-family:  'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light', cursive;
     letter-spacing: 3px;
     font-size: 500%;
-    padding-left: 10%;
+    padding-left: 8%;
+    padding-top: 1%;
 }
 
 .logo {
     float: right;
-    margin-top: 2%;
     margin-right: 0.5%;
+    size: auto;
+    z-index: -1;
+}
+
+#top-part {
+    height: 600px;
+    line-height: 75px;
+}
+
+/* game-area */
+
+h2 {
+    margin-top: 8%;
+    text-align: center;
+    font-size: 250%;
+}
+
+#game-area {
+    height: 600px;
+}
+
+#characters button {
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 3px;
+    font-size: 200%;
+    padding-left: 8%;
+    padding-top: 1%;
+}
+
+.girls {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.boys {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.score-area {
+    text-align: center;
+    padding: 5%;
+}
+
+.score-area>p {
+    display: inline;
+    font-size: 150%;
+    
 }
 
 /* Footer */
+
+footer {
+    height: 300px;
+    width: 100%;
+}
 
 #copyright {
     font-family: 'Quicksand', sans-serif;
@@ -35,21 +88,32 @@ h1 {
     letter-spacing: 2px;
 }
 
+.social-networks {
+    height: 50px;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.social-networks a {
+    text-decoration: none;
+}
+
 .social-networks>li {
     display: inline;
+    
 }
 
 .social-networks em {
-    font-size: 130%;
+    font-size: 200%;
     margin: 1%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-#linkedin em{
+#linkedin em {
     color: #44aedd;
 }
 
-#github em{
+#github em {
     color: #ed3833;
 }

@@ -17,40 +17,30 @@
 </head>
 
 <body>
-    <header class="heading">
+    <section id="top-part">
         <h1 class="title">The Quiz</h1>
         <img class="logo" src="assets/images/friends_logo.png" alt="Friends logo">
-    </header>
-    <section class="game-area">
-        <div class="girls">
-            <button class="btn btn--big btn--red">
-                <i class="fa-solid fa-mug-hot"> Rachel Greene</i>
-            </button>
-            <button class="btn btn--big btn--yellow">
-                <i class="fa-solid fa-couch"> Monica Geller</i>
-            </button>
-            <button class="btn btn--big btn--blue">
-                <i class="fa-solid fa-frame"> Phoebe Buffay</i>
-            </button>
-        </div>
-        <div class="boys">
-            <button class="btn btn--big btn--red">
-                <i class="fa-solid fa-pizza-slice"> Ross Geller</i>
-            </button>
-            <button class="btn btn--big btn--yellow">
-                <i class="fa-solid fa-lobster"> Chandler Bing</i>
-            </button>
-            <button class="btn btn--big btn--blue">
-                <i class="fa-solid fa-umbrella"> Joey Tribbiani</i>
-            </button>
-        </div>
     </section>
-
-    <section class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Wrong Answers <span id="wrong">0</span></p>
-    </section>
-
+    <section id="game-area">
+        <h2>Let's start! Now pick your friend!</h2>
+        <div id="characters">
+            <div class="girls">
+                <button class="btn">Rachel Greene</button>
+                <button class="btn">Monica Geller</button>
+                <button class="btn">Phoebe Buffay</button>
+            </div>
+            <div class="boys">
+                <button class="btn">Ross Geller</button>
+                <button class="btn">Chandler Bing</button>
+                <button class="btn">Joey Tribbiani</button>
+            </div>
+        </div> <!--"characters"-->
+        <div class="score-area">
+            <p class="scores">Correct Answers <span id="score">0</span></p>
+            <p class="scores">Wrong Answers <span id="wrong">0</span></p>
+        </div>
+    </section> <!--"score-area"-->
+    
     <footer>
         <div id="footer-content">
             <ul class="social-networks">
@@ -77,4 +67,5 @@
 
     <script src="assets/js/script.js"> </script>
 </body>
+
 </html>
