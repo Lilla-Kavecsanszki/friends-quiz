@@ -5,20 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Fonts-->
+    <!--Fonts and icons-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Shadows+Into+Light&family=Ubuntu:wght@300;400&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4a11e6ad7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Friends Quiz</title>
 </head>
 
 <body>
     <h1 class="heading">The Quiz<img class="logo" src="assets/images/friends_logo.png" alt="Friends logo"></h1>
 
-    <div class="game-area"></div>
+    <div class="game-area">
+        <div class="girls">
+            <button class="btn btn--big btn--red">
+                <i class="fa-solid fa-mug-hot"> Rachel Greene</i>
+            </button>
+            <button class="btn btn--big btn--yellow">
+                <i class="fa-solid fa-couch"> Monica Geller</i>
+            </button>
+            <button class="btn btn--big btn--blue">
+                <i class="fa-solid fa-frame"> Phoebe Buffay</i>
+            </button>
+        </div>
+        <div class="boys">
+            <button class="btn btn--big btn--red">
+                <i class="fa-solid fa-pizza-slice"> Ross Geller</i>
+            </button>
+            <button class="btn btn--big btn--yellow">
+                <i class="fa-solid fa-lobster"> Chandler Bing</i>
+            </button>
+            <button class="btn btn--big btn--blue">
+                <i class="fa-solid fa-umbrella"> Joey Tribbiani</i>
+            </button>
+        </div>
+    </div>
 
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
