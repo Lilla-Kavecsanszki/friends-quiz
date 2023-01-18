@@ -25,3 +25,31 @@ h1 {
     margin-top: 2%;
     margin-right: 0.5%;
 }
+
+/* Footer */
+
+#copyright {
+    font-family: 'Quicksand', sans-serif;
+    height: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks em {
+    font-size: 130%;
+    margin: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#linkedin em{
+    color: #44aedd;
+}
+
+#github em{
+    color: #ed3833;
+}
