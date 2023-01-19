@@ -43,6 +43,7 @@ h2 {
 
 #game-area {
     height: 600px;
+
 }
 
 #characters button {
@@ -71,7 +72,17 @@ h2 {
 .score-area>p {
     display: inline;
     font-size: 150%;
-    
+
+}
+
+#score {
+    color: #44aedd;
+    font-weight: bold;
+}
+
+#wrong {
+    color: #ed3833;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -100,7 +111,7 @@ footer {
 
 .social-networks>li {
     display: inline;
-    
+
 }
 
 .social-networks em {

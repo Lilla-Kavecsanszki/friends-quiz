@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <!--Fonts and icons-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +19,16 @@
 </head>
 
 <body>
-    <section id="top-part">
+    <header>
         <h1 class="title">The Quiz</h1>
-        <img class="logo" src="assets/images/friends_logo.png" alt="Friends logo">
+    </header>
+    <section id="top-part">
+        <div>
+            <button id="instructions">How to Play?</button>
+        </div>
+        <div>
+            <img class="logo" src="assets/images/friends_logo.png" alt="Friends logo">
+        </div>
     </section>
     <section id="game-area">
         <h2>Let's start! Now pick your friend!</h2>
@@ -34,13 +43,15 @@
                 <button class="btn">Chandler Bing</button>
                 <button class="btn">Joey Tribbiani</button>
             </div>
-        </div> <!--"characters"-->
+        </div>
+        <!--"characters"-->
         <div class="score-area">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores">Wrong Answers <span id="wrong">0</span></p>
         </div>
-    </section> <!--"score-area"-->
-    
+    </section>
+    <!--"score-area"-->
+
     <footer>
         <div id="footer-content">
             <ul class="social-networks">
