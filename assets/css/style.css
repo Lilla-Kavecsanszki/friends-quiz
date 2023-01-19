@@ -168,7 +168,7 @@ h2 a {
 
 h2 a:active,
 h2 a:hover {
-    background-color: rgba(72,160,79, .2)
+    background-color: rgba(72,160,79, .2);
 }
 
 #game-area {
@@ -284,6 +284,24 @@ h2 a:hover {
     background-color: #48a04f;
     color: whitesmoke;
     border-color: whitesmoke;
+}
+
+/* How to Play? */
+
+#instruction-container {
+    height: 600px;
+    width: 100%;
+}
+
+#instruction-title {
+    padding: 5%;
+    font-size: 300%;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 150%;
 }
 
 /* Footer */
