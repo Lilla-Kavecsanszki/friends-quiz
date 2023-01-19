@@ -17,20 +17,26 @@ h1 {
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 3px;
     font-size: 500%;
-    padding-left: 5%;
-    padding-top: 3%;
 }
 
-.logo {
-    float: right;
-    margin-right: 0.5%;
-    size: auto;
-    margin-top: -22%;
-    width: auto;
+header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    line-height: 75px;
+    justify-content: space-between;
+    display: flex;
 }
 
-#top-part {
-    height: 600px;
+#hamburger {
+    width: 20%;
+}
+
+#title {
+    width: 80%;
+    padding-top: 30px;
+    padding-right: 700px;
 }
 
 /* hamburger menu - https://codepen.io/andreykrokhin/pen/mGEqja */
@@ -62,8 +68,8 @@ h1 {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 40px;
 
     width: 50px;
     height: 50px;
@@ -132,6 +138,15 @@ h1 {
 
 .menu__item:hover {
     background-color: rgba(143, 78, 196, .2)
+}
+
+/* Logo */
+
+#logo-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/friends_logo.png') no-repeat center center;
+    background-size: cover;
 }
 
 /* game-area */
