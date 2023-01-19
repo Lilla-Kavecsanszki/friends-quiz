@@ -90,15 +90,22 @@ h2 {
 .btn {
     width: 180px;
     height: 100px;
-    font-family: 'Shadows Into Light', cursive;
     letter-spacing: 1.2px;
-    color: #141c1e;
     border-radius: 50%;
     font-size: 180%;
 }
 
 .btn_instructions {
     background-color: #8f4ec4;
+    color: #141c1e;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.btn_instructions:active,
+.btn_instructions:hover {
+    background-color: whitesmoke;
+    color: #8f4ec4;
+    border: 3px solid #8f4ec4;
 }
 
 .btn-character {
@@ -110,6 +117,43 @@ h2 {
     border-radius: 20%;
     font-size: 200%;
     background-color: whitesmoke;
+    margin: 15px;
+}
+
+.btn--blue {
+    color: #44aedd;
+    font-weight: bold;
+}
+
+.btn--blue:active,
+.btn--blue:hover {
+    background-color: #44aedd;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.btn--red {
+    color: #ed3833;
+    font-weight: bold;
+}
+
+.btn--red:active,
+.btn--red:hover {
+    background-color: #ed3833;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.btn--green {
+    color: #48a04f;
+    font-weight: bold;
+}
+
+.btn--green:active,
+.btn--green:hover {
+    background-color: #48a04f;
+    color: whitesmoke;
+    border-color: whitesmoke;
 }
 
 /* Footer */
