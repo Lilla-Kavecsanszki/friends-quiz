@@ -22,7 +22,7 @@ let questions = [{
         choice2: 'nose',
         choice3: 'ears',
         choice4: 'eyes',
-        answer:
+        answer: '',
     },
     {
         question: 'How old was Rachel when she broke up with Tag?',
@@ -30,7 +30,7 @@ let questions = [{
         choice2: '32',
         choice3: '28',
         choice4: '30',
-        answer:
+        answer: '',
     },
     {
         question: "Where was Rachel's first date with Ross?",
@@ -38,7 +38,7 @@ let questions = [{
         choice2: 'café',
         choice3: 'restaurant',
         choice4: 'cinema',
-        answer:
+        answer: '',
     },
     {
         question: "What is Rachel's kid's name?",
@@ -70,7 +70,7 @@ let questions = [{
         choice2: 'tax fraud',
         choice3: 'jaywalking',
         choice4: 'speeding',
-        answer:
+        answer: '',
     },
     {
         question: 'What did Gavin bring to Rachel after they kissed?',
@@ -78,7 +78,7 @@ let questions = [{
         choice2: 'jewellery',
         choice3: 'soup',
         choice4: 'medicine',
-        answer:
+        answer: '',
     },
     {
         question: "What is Rachel’s ex-fiancé’s occupation?",
@@ -86,7 +86,7 @@ let questions = [{
         choice2: 'doctor',
         choice3: 'lawyer',
         choice4: 'accountant',
-        answer:
+        answer: '',
     },
     {
         question: "What is Rachel’s favourite flower?",
@@ -94,7 +94,7 @@ let questions = [{
         choice2: 'daisy',
         choice3: 'tulip',
         choice4: 'lily',
-        answer:
+        answer: '',
     },
 ];
 
@@ -107,7 +107,7 @@ const MAX_QUESTIONS = 10;
  * Start a new quiz
  * */
 
-startGame() {
+function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
@@ -136,44 +136,42 @@ function getNewQuestion() {
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 
-    choices.forEach(choice) {
-        const choiceNumber = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + choiceNumber];
+    choices.forEach((choice) => {
+            const choiceNumber = choice.dataset['number'];
+            choice.innerText = currentQuestion['choice' + choiceNumber];
+        });
+
+        availableQuestions.splice(questionsIndex, 1); acceptingAnswers === true;
     }
 
-    availableQuestions.splice(questionsIndex, 1);
-    acceptingAnswers === true;
-}
+    choices.forEach((choice) => {
+                choice.addEventListener("click", (e) => {
+                    if (!acceptingAnswers) return;
 
-choices.forEach(choice) {
-    choice.addEventListener('click', (e) {
-        if (!acceptingAnswers)
-            return;
+                    acceptingAnswers = false;
+                    const selectedChoice = e.target;
+                    const selectedAnswer = selectedChoice.dataset['number'];
 
-        acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+                    let classToApply = selectedAnswer === currentQuestion.answer ? "correctanswer" : "wronganswer";
 
-        let classToApply = selectedAnswer === currentQuestion.answer ? "correctanswer" : "wronganswer";
+                    if (classToApply === 'correctanswer') {
+                        incrementScore(SCORE_POINTS);
+                    }
 
-        if (classToApply === 'correctanswer') {
-            incrementScore(SCORE_POINTS)
-        }
+                    selectedChoice.parentElement.classList.add(classToApply);
 
-        selectedChoice.parentElement.classList.add(classToApply);
+                    /**
+                     * Set Time Out in case the user is thinking for too long, the program will load a new game
+                     */
 
-    /**
-     * Set Time Out in case the user is thinking for too long, the program will load a new game
-     */
+                    let timeOut = setTimeOut(() => {
+                        selectedChoice.parentElement.classList.remove(classToApply);
+                        getNewQuestion();
+                    }, 1000);
+                });
+            });
 
-       let timeOut = setTimeOut(() {
-            selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
-        }, 1000);
-    })
-}
-
-function incrementScore(num) {
-    score += num;
-    scoreText.innerText = score;
-}
+            function incrementScore(num) {
+                score += num;
+                scoreText.innerText = score;
+            }
