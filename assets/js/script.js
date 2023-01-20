@@ -10,8 +10,13 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
+//Load the page then start running the game
+
+document.addEventListener("DOMContentLoaded", function () {
+    startGame();
+});
+
+let questions = [{
         question: 'What plastic surgery did Rachel have in high school?',
         choice1: 'breast',
         choice2: 'nose',
@@ -93,64 +98,82 @@ let questions = [
     },
 ];
 
-const SCORE_POINTS = 10;
+// points for each questions and maximum quiestions
+
+const SCORE_POINTS = 1;
 const MAX_QUESTIONS = 10;
 
-startGame () {
+/**
+ * Start a new quiz
+ * */
+
+startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
 }
 
-getNewQuestion() {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
+/** 
+ * New Question and save end score
+ * */
 
-        return window.location.assign('/end.html')
+function getNewQuestion() {
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+        return window.location.assign('/end.html');
     }
-    questionCounter ++;
-    progressText.innerHTML = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+
+    // Shows the player which question they are at and their progess
+
+    questionCounter++;
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(question/MAX_QUESTIONS)*100}%`;
+
+    // Questions and answers
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
-    question.innerText = currentQuestion.question
+    question.innerText = currentQuestion.question;
 
-    choices.forEach(choice {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number]
-    })  
+    choices.forEach(choice) {
+        const choiceNumber = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + choiceNumber];
+    }
 
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers === true;
 }
 
-choices.forEach(choice {
-    choice.addEventListener('click', e {
-        if(!acceptingAnswers) 
-        return;
+choices.forEach(choice) {
+    choice.addEventListener('click', (e) {
+        if (!acceptingAnswers)
+            return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
-        let classToApply = selectedAnswer === currentQuestion.answer ? 'correctanswer' : 'wronganswer';
+        let classToApply = selectedAnswer === currentQuestion.answer ? "correctanswer" : "wronganswer";
 
-        if(classToApply === 'correctanswer') {
+        if (classToApply === 'correctanswer') {
             incrementScore(SCORE_POINTS)
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
-        setTimeOut(() {
+    /**
+     * Set Time Out in case the user is thinking for too long, the program will load a new game
+     */
+
+       let timeOut = setTimeOut(() {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
     })
-})
+}
 
-incrementScore = num {
+function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
 }
