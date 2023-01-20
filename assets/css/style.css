@@ -214,11 +214,10 @@ h2 a:hover {
 }
 
 .btn {
-    width: 180px;
-    height: 100px;
     letter-spacing: 1.2px;
     border-radius: 50%;
     font-size: 180%;
+    text-decoration: none;
 }
 
 .btn_instructions {
@@ -235,11 +234,8 @@ h2 a:hover {
 }
 
 .btn-character {
-    width: 300px;
-    height: 180px;
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 3px;
-    color: #141c1e;
     border-radius: 20%;
     font-size: 200%;
     background-color: whitesmoke;
@@ -282,6 +278,22 @@ h2 a:hover {
     border-color: whitesmoke;
 }
 
+.btn--highscores {
+    color: #8f4ec4;
+    font-weight: bold;
+    border-radius: 20%;
+    font-size: 200%;
+    background-color: whitesmoke;
+    margin: 15px;
+}
+
+.btn--highscores:active,
+.btn--highscores:hover {
+    background-color: #8f4ec4s;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
 /* How to Play? */
 
 #instruction-container {
@@ -318,7 +330,7 @@ p {
     text-align: center;
     padding: 2% 0;
 
-    /* animation shake effect on loading the page, too */
+    /* animation shake effect on loading the page */
     animation-name: shake;
     animation-duration: 5s;
     animation: shake 0.5s;
