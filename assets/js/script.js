@@ -164,7 +164,7 @@ function getNewQuestion() {
                      * Set Time Out in case the user is thinking for too long, the program will load a new game
                      */
 
-                    let timeOut = setTimeOut(() => {
+                    let timeOut = setTimeout(() => {
                         selectedChoice.parentElement.classList.remove(classToApply);
                         getNewQuestion();
                     }, 1000);
@@ -175,3 +175,7 @@ function getNewQuestion() {
                 score += num;
                 scoreText.innerText = score;
             }
+
+            startGame();
+
+        
