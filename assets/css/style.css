@@ -432,3 +432,69 @@ footer {
 #github em {
     color: #ed3833;
 }
+
+/* Quiz pages */
+
+.choice-container {
+    display: flex;
+    margin-bottom: 2px;
+    width: 100%;
+    border-radius: 10%;
+    background: #141c1e;
+    font-size: 100%;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: rgba(20,28,30, .5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 20px 25px;
+    color: #f8d649;
+}
+
+.choice-text {
+    padding: 20px;
+    width: 100%;
+    color: #f8d649;
+}
+
+.correctanswer {
+background: rgba(72, 160, 79, 0.8);
+}
+
+.correctanswer {
+    background: rgba(237, 56, 51, 0.8);
+    }
+
+#displaybar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.displaybar-prefix {
+    text-align: center;
+}
+
+.displaybar-main-text {
+    text-align: center;
+}
+
+#progressbar {
+    width: 250px;
+    height: 30px;
+    border: 3px solid #44aedd;
+    margin-top: 3%;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+#progressbar-full {
+    height: 100%;
+    background: #44aedd;
+    width: 0%;
+}
