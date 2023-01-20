@@ -115,7 +115,7 @@ function startGame() {
 }
 
 /** 
- * New Question and save end score
+ * New Question and save end  score
  * */
 
 function getNewQuestion() {
@@ -152,7 +152,7 @@ function getNewQuestion() {
                     const selectedChoice = e.target;
                     const selectedAnswer = selectedChoice.dataset['number'];
 
-                    let classToApply = selectedAnswer === currentQuestion.answer ? "correctanswer" : "wronganswer";
+                    let classToApply = selectedAnswer == currentQuestion.answer ? "correctanswer" : "wronganswer";
 
                     if (classToApply === 'correctanswer') {
                         incrementScore(SCORE_POINTS);
@@ -171,7 +171,7 @@ function getNewQuestion() {
                 });
             });
 
-            function incrementScore(num) {
+            incrementScore = num => {
                 score += num;
                 scoreText.innerText = score;
             }
