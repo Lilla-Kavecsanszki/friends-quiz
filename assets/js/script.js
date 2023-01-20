@@ -1,4 +1,94 @@
-function gotoLink(Link) {
-    console.log(link.value);
-    window.open(link.value);
-}
+const question = document.getElementById('question');
+const choices = Array.from(document.getElementsByClassName('choice-text'));
+const progressText = document.getElementById('progress-text');
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('progressbar-full');
+
+let currentQuestion = {}
+let acceptingAnswers = true;
+let score = 0;
+let questionCounter = 0;
+let availableQuestion = [];
+
+let questions = [
+    {
+        question: 'What plastic surgery did Rachel have in high school?',
+        choice1: 'breast',
+        choice2: 'nose',
+        choice3: 'ears',
+        choice4: 'eyes',
+        answer:
+    },
+    {
+        question: 'How old was Rachel when she broke up with Tag?',
+        choice1: '25',
+        choice2: '32',
+        choice3: '28',
+        choice4: '30',
+        answer:
+    },
+    {
+        question: "Where was Rachel's first date with Ross?",
+        choice1: 'museum',
+        choice2: 'café',
+        choice3: 'restaurant',
+        choice4: 'cinema',
+        answer:
+    },
+    {
+        question: "What is Rachel's kid's name?",
+        choice1: 'Ruth',
+        choice2: 'James',
+        choice3: 'Emma',
+        choice4: 'River',
+        answer: 3,
+    },
+    {
+        question: "Where was Rachel's dream job that she got offered after Ralph Lauren?",
+        choice1: 'Barcelona',
+        choice2: 'London',
+        choice3: 'Milan',
+        choice4: 'Paris',
+        answer: 4,
+    },
+    {
+        question: "What did Rachel shape Emma’s birthday cake into?",
+        choice1: 'flower',
+        choice2: 'bunny',
+        choice3: 'bow',
+        choice4: 'kitty',
+        answer: 2,
+    },
+    {
+        question: 'Why did Rachel get in trouble with the police?',
+        choice1: 'stealing',
+        choice2: 'tax fraud',
+        choice3: 'jaywalking',
+        choice4: 'speeding',
+        answer:
+    },
+    {
+        question: 'What did Gavin bring to Rachel after they kissed?',
+        choice1: 'scarf',
+        choice2: 'jewellery',
+        choice3: 'soup',
+        choice4: 'medicine',
+        answer:
+    },
+    {
+        question: "What is Rachel’s ex-fiancé’s occupation?",
+        choice1: 'dentist',
+        choice2: 'doctor',
+        choice3: 'lawyer',
+        choice4: 'accountant',
+        answer:
+    },
+    {
+        question: "What is Rachel’s favourite flower?",
+        choice1: 'rose',
+        choice2: 'daisy',
+        choice3: 'tulip',
+        choice4: 'lily',
+        answer:
+    },
+]
