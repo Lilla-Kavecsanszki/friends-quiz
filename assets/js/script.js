@@ -16,13 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
     startGame();
 });
 
+// Rachel questions
+
 let questions = [{
         question: 'What plastic surgery did Rachel have in high school?',
         choice1: 'breast',
         choice2: 'nose',
         choice3: 'ears',
         choice4: 'eyes',
-        answer: 1,
+        answer: 2,
     },
     {
         question: 'How old was Rachel when she broke up with Tag?',
@@ -30,7 +32,7 @@ let questions = [{
         choice2: '32',
         choice3: '28',
         choice4: '30',
-        answer: 3,
+        answer: 4,
     },
     {
         question: "Where was Rachel's first date with Ross?",
@@ -38,7 +40,7 @@ let questions = [{
         choice2: 'café',
         choice3: 'restaurant',
         choice4: 'cinema',
-        answer: 4,
+        answer: 1,
     },
     {
         question: "What is Rachel's kid's name?",
@@ -70,7 +72,7 @@ let questions = [{
         choice2: 'tax fraud',
         choice3: 'jaywalking',
         choice4: 'speeding',
-        answer: 1,
+        answer: 4,
     },
     {
         question: 'What did Gavin bring to Rachel after they kissed?',
@@ -78,7 +80,7 @@ let questions = [{
         choice2: 'jewellery',
         choice3: 'soup',
         choice4: 'medicine',
-        answer: 2,
+        answer: 3,
     },
     {
         question: "What is Rachel's ex-fiancé's occupation?",
@@ -86,7 +88,7 @@ let questions = [{
         choice2: 'doctor',
         choice3: 'lawyer',
         choice4: 'accountant',
-        answer: 2,
+        answer: 1,
     },
     {
         question: "What is Rachel's favourite flower?",
@@ -94,8 +96,92 @@ let questions = [{
         choice2: 'daisy',
         choice3: 'tulip',
         choice4: 'lily',
-        answer: 1,
+        answer: 4,
     },
+];
+
+// Monica questions
+
+let questionsMonica = [{
+    question: 'How many categories of towels does Monica have?',
+    choice1: '5',
+    choice2: '9',
+    choice3: '11',
+    choice4: '20',
+    answer: 3,
+},
+{
+    question: "Who was Monica's first love to her dad?",
+    choice1: 'employee',
+    choice2: 'tennis coach',
+    choice3: 'friend ',
+    choice4: 'student',
+    answer: 3,
+},
+{
+    question: "What colour was Monica's fake nail that she lost in a quiche at her mom's party?",
+    choice1: 'red',
+    choice2: 'green',
+    choice3: 'black',
+    choice4: 'blue',
+    answer: 4,
+},
+{
+    question: "Which famous movie star's hair style Monica asked from Phoebe to cut for her?",
+    choice1: 'Demi Moor',
+    choice2: 'Dudley Moore',
+    choice3: 'Halley Berry',
+    choice4: 'Christy Turlington',
+    answer: 1,
+},
+{
+    question: "What occupation did Monica lie for herself on the adoption interview?",
+    choice1: 'teacher',
+    choice2: 'priest',
+    choice3: 'chef',
+    choice4: 'lawyer',
+    answer: 2,
+},
+{
+    question: "What type of class Monia sneaks in with Joey after her bad review?",
+    choice1: 'acting',
+    choice2: 'cooking',
+    choice3: 'cleaning',
+    choice4: 'writing',
+    answer: 2,
+},
+{
+    question: 'What does Monica keep in her secret room?',
+    choice1: 'her shoes',
+    choice2: 'her cleaning products',
+    choice3: 'her mess',
+    choice4: 'her old clothes',
+    answer: 3,
+},
+{
+    question: 'What did Monica find out on her wedding?',
+    choice1: "she's pregnant",
+    choice2: "Phoebe's pregnant",
+    choice3: "her sister is pregnant",
+    choice4: "Rachel's pregnant",
+    answer: 4,
+},
+{
+    question: "Who did Monica invite over for Thanksgiving?",
+    choice1: "Ross's old high school friend",
+    choice2: "her boss",
+    choice3: "Rachel's sister",
+    choice4: "Ross's ex",
+    answer: 1,
+},
+{
+    question: "Who did Monica and Candler meet in Connecticut?",
+    choice1: "Monica's mom",
+    choice2: 'Janice',
+    choice3: 'Richard',
+    choice4: "Chandler's boss",
+    answer: 2,
+},
 ];
 
 // points for each questions and maximum quiestions
