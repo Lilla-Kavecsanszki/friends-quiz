@@ -57,7 +57,7 @@ let questions = [{
         answer: 4,
     },
     {
-        question: "What did Rachel shape Emma’s birthday cake into?",
+        question: "What did Rachel shape Emma's birthday cake into?",
         choice1: 'flower',
         choice2: 'bunny',
         choice3: 'bow',
@@ -81,7 +81,7 @@ let questions = [{
         answer: 2,
     },
     {
-        question: "What is Rachel’s ex-fiancé’s occupation?",
+        question: "What is Rachel's ex-fiancé's occupation?",
         choice1: 'dentist',
         choice2: 'doctor',
         choice3: 'lawyer',
@@ -89,7 +89,7 @@ let questions = [{
         answer: 2,
     },
     {
-        question: "What is Rachel’s favourite flower?",
+        question: "What is Rachel's favourite flower?",
         choice1: 'rose',
         choice2: 'daisy',
         choice3: 'tulip',
@@ -100,7 +100,7 @@ let questions = [{
 
 // points for each questions and maximum quiestions
 
-const SCORE_POINTS = 1;
+const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 10;
 
 /**
@@ -119,16 +119,16 @@ function startGame() {
  * */
 
 function getNewQuestion() {
-    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('/end.html');
+        return window.location.assign('/final-score.html');
     }
 
     // Shows the player which question they are at and their progess
 
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    progressBarFull.style.width = `${(question/MAX_QUESTIONS)*100}%`;
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS)*100}%`;
 
     // Questions and answers
 
