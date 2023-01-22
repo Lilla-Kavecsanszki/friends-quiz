@@ -122,7 +122,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/end.html');
+        return window.location.assign('/final-score.html');
     }
 
     // Shows the player which question they are at and their progess
@@ -143,7 +143,7 @@ function getNewQuestion() {
     });
 
     availableQuestions.splice(questionsIndex, 1);
-    acceptingAnswers === true;
+    acceptingAnswers = true;
 }
 
 choices.forEach((choice) => {
