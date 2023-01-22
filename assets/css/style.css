@@ -435,14 +435,25 @@ footer {
 
 /* Quiz pages */
 
+.quiz-container {
+    padding: 120px 300px;
+}
+
+#question {
+    padding-top: 70px;
+}
+
+#choice-outer-box {
+    padding-top: 70px;
+}
+
 .choice-container {
     display: flex;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 50px;
     background: #141c1e;
     font-size: 100%;
-    min-width: 80rem;
 }
 
 .choice-container:hover {
@@ -484,12 +495,16 @@ background: rgba(72, 160, 79, 0.8);
     text-align: center;
 }
 
+#progress-text {
+padding-left: 0;
+}
+
 #progressbar {
-    width: 250px;
-    height: 30px;
+    width: 160px;
+    height: 1.5rem;
     border: 3px solid #44aedd;
-    margin-top: 3%;
-    border-radius: 20%;
+    margin-top: 7%;
+    border-radius: 50px;
     overflow: hidden;
 }
 
