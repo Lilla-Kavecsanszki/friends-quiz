@@ -119,9 +119,10 @@ function startGame() {
  * */
 
 function getNewQuestion() {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('/final-score.html');
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score);
+
+        return window.location.assign('/end.html');
     }
 
     // Shows the player which question they are at and their progess
@@ -137,45 +138,44 @@ function getNewQuestion() {
     question.innerText = currentQuestion.question;
 
     choices.forEach((choice) => {
-            const choiceNumber = choice.dataset['number'];
-            choice.innerText = currentQuestion['choice' + choiceNumber];
-        });
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    });
 
-        availableQuestions.splice(questionsIndex, 1); acceptingAnswers === true;
-    }
+    availableQuestions.splice(questionsIndex, 1);
+    acceptingAnswers === true;
+}
 
-    choices.forEach((choice) => {
-                choice.addEventListener("click", (e) => {
-                    if (!acceptingAnswers) return;
+choices.forEach((choice) => {
+    choice.addEventListener("click", (e) => {
+        if (!acceptingAnswers) return;
 
-                    acceptingAnswers = false;
-                    const selectedChoice = e.target;
-                    const selectedAnswer = selectedChoice.dataset['number'];
+        acceptingAnswers = false;
+        const selectedChoice = (e).target;
+        const selectedAnswer = selectedChoice.dataset['number'];
 
-                    let classToApply = selectedAnswer == currentQuestion.answer ? "correctanswer" : "wronganswer";
+        let classToApply = selectedAnswer == currentQuestion.answer ? "correctanswer" : "wronganswer";
 
-                    if (classToApply === 'correctanswer') {
-                        incrementScore(SCORE_POINTS);
-                    }
+        if (classToApply === 'correctanswer') {
+            incrementScore(SCORE_POINTS);
+        }
 
-                    selectedChoice.parentElement.classList.add(classToApply);
+        selectedChoice.parentElement.classList.add(classToApply);
 
-                    /**
-                     * Set Time Out in case the user is thinking for too long, the program will load a new game
-                     */
+        /**
+         * Set Time Out in case the user is thinking for too long, the program will load a new game
+         */
 
-                  setTimeout(() => {
-                        selectedChoice.parentElement.classList.remove(classToApply);
-                        getNewQuestion();
-                    }, 1000);
-                });
-            });
+        const timeoutId = setTimeout(function() {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000); //minute
+    });
+});
 
-            incrementScore = num => {
-                score += num;
-                scoreText.innerText = score;
-            }
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+}
 
-            startGame();
-
-        
+startGame();

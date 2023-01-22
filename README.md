@@ -5,3 +5,5 @@ hamburger menu - https://codepen.io/andreykrokhin/pen/mGEqja
 
 How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial
 https://www.youtube.com/watch?v=f4fB9Xg2JEY
+
+https://www.sitepoint.com/simple-javascript-quiz/
