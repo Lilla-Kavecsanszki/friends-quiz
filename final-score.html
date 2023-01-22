@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon-->
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <!--Fonts and icons-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Friends Quiz</title>
 </head>
+
 <body>
     <header>
         <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox"/>
+            <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
             </label>
@@ -32,7 +33,14 @@
         </div>
     </header>
     <div class="quiz-container">
-
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalscore">0</h1>
+            <form class="end-form-container">
+                <h2 id="put-your-name">Enter your name below!</h2>
+                <input type="text" name="name" id="user" placeholder="Enter your name">
+                <button class="btn" id="fnalscorebutton" type="submit" onclick="saveHighScore(event)">Save your score!</button>
+            </form>
+        </div>
     </div>
     <footer>
         <div id="footer-content">

@@ -22,7 +22,7 @@ let questions = [{
         choice2: 'nose',
         choice3: 'ears',
         choice4: 'eyes',
-        answer: '',
+        answer: 1,
     },
     {
         question: 'How old was Rachel when she broke up with Tag?',
@@ -30,7 +30,7 @@ let questions = [{
         choice2: '32',
         choice3: '28',
         choice4: '30',
-        answer: '',
+        answer: 3,
     },
     {
         question: "Where was Rachel's first date with Ross?",
@@ -38,7 +38,7 @@ let questions = [{
         choice2: 'café',
         choice3: 'restaurant',
         choice4: 'cinema',
-        answer: '',
+        answer: 4,
     },
     {
         question: "What is Rachel's kid's name?",
@@ -70,7 +70,7 @@ let questions = [{
         choice2: 'tax fraud',
         choice3: 'jaywalking',
         choice4: 'speeding',
-        answer: '',
+        answer: 1,
     },
     {
         question: 'What did Gavin bring to Rachel after they kissed?',
@@ -78,7 +78,7 @@ let questions = [{
         choice2: 'jewellery',
         choice3: 'soup',
         choice4: 'medicine',
-        answer: '',
+        answer: 2,
     },
     {
         question: "What is Rachel’s ex-fiancé’s occupation?",
@@ -86,7 +86,7 @@ let questions = [{
         choice2: 'doctor',
         choice3: 'lawyer',
         choice4: 'accountant',
-        answer: '',
+        answer: 2,
     },
     {
         question: "What is Rachel’s favourite flower?",
@@ -94,7 +94,7 @@ let questions = [{
         choice2: 'daisy',
         choice3: 'tulip',
         choice4: 'lily',
-        answer: '',
+        answer: 1,
     },
 ];
 
@@ -164,7 +164,7 @@ function getNewQuestion() {
                      * Set Time Out in case the user is thinking for too long, the program will load a new game
                      */
 
-                    let timeOut = setTimeout(() => {
+                  setTimeout(() => {
                         selectedChoice.parentElement.classList.remove(classToApply);
                         getNewQuestion();
                     }, 1000);
