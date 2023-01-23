@@ -436,6 +436,90 @@ let questionsChandler = [{
 },
 ];
 
+// Joey questions
+
+let questionsJoey = [{
+    question: "How many sisters does Joey have?",
+    choice1: '2',
+    choice2: '4',
+    choice3: '5',
+    choice4: '7',
+    answer: 4,
+},
+{
+    question: "What is Joey's heritage?",
+    choice1: 'Italian-American',
+    choice2: 'Canadian',
+    choice3: 'Irish-American',
+    choice4: 'Mexican',
+    answer: 1,
+},
+{
+    question: "What kind of movie Joey shoots during Monica and Chandler's wedding?",
+    choice1: 'zombie movie',
+    choice2: 'period drama',
+    choice3: 'war movie',
+    choice4: 'romcom',
+    answer: 3,
+},
+{
+    question: "What did Joey sell in Las Vegas while his movie was on a break?",
+    choice1: 'insurance',
+    choice2: 'perfume',
+    choice3: 'clothes',
+    choice4: 'cars',
+    answer: 2,
+},
+{
+    question: "What animal is Joey's favourite plush toy?",
+    choice1: 'hedgehog',
+    choice2: 'dog',
+    choice3: 'penguin',
+    choice4: 'bear',
+    answer: 3,
+},
+{
+    question: "Where did Joey move after New York?",
+    choice1: 'Italy',
+    choice2: 'London',
+    choice3: 'Los Angeles',
+    choice4: 'Las Vegas',
+    answer: 3,
+},
+{
+    question: "What did Joey buy by a mistake on a charity ball?",
+    choice1: 'car',
+    choice2: 'boat',
+    choice3: 'house',
+    choice4: 'plastic dog',
+    answer: 2,
+},
+{
+    question: "What is Joey’s favourite sandwich?",
+    choice1: "meat ball",
+    choice2: 'ham and cheese',
+    choice3: 'tuna',
+    choice4: 'sausage and bacon',
+    answer: 1,
+},
+{
+    question: "Who is Joey’s first love?",
+    choice1: 'Monica',
+    choice2: 'Rachel',
+    choice3: 'Kathy',
+    choice4: 'Emily',
+    answer: 2,
+},
+{
+    question: "What language Joey lied about on his CV?",
+    choice1: 'Italian',
+    choice2: 'Spanish',
+    choice3: "French",
+    choice4: "Portuguese",
+    answer: 3,
+},
+];
+
 // points for each questions and maximum quiestions
 
 const SCORE_POINTS = 10;
