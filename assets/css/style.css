@@ -302,14 +302,15 @@ h2 a:hover {
 }
 
 #instruction-title {
-    padding: 5%;
     font-size: 300%;
+    padding-top: 4%; 
 }
 
 #title {
-    padding: 3%;
     font-size: 150%;
-    letter-spacing: 1, 5px;
+    letter-spacing: 1px;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 #rules {
