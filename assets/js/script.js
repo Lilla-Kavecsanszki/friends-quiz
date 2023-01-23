@@ -186,7 +186,7 @@ let questionsMonica = [{
 
 // Phoebe questions
 
-let questions = [{
+let questionsPhoebe = [{
     question: "What did Phoebe's mom give her as a lesson before saying yes to surrogate her brother's kids?",
     choice1: 'doll',
     choice2: 'puppy',
@@ -270,7 +270,7 @@ let questions = [{
 
 // Ross questions
 
-let questions = [{
+let questionsRoss = [{
     question: "What is Ross' ex-wife's name?",
     choice1: 'Karen',
     choice2: 'Carol',
@@ -349,6 +349,90 @@ let questions = [{
     choice3: "rubik’s cube",
     choice4: "bicycle",
     answer: 4,
+},
+];
+
+// Chandler questions
+
+let questionsChandler = [{
+    question: "Where was Chandler's dad's residency show?",
+    choice1: 'New York',
+    choice2: 'Los Angeles',
+    choice3: 'New Orleans',
+    choice4: 'Las Vegas',
+    answer: 4,
+},
+{
+    question: "On which holiday did Chandler's parents announced their divorce?",
+    choice1: 'Christmas',
+    choice2: 'Thanksgiving',
+    choice3: 'Easter',
+    choice4: '4th of July',
+    answer: 2,
+},
+{
+    question: "How old was Chandler when he had his first kiss?",
+    choice1: '19',
+    choice2: '21',
+    choice3: '17',
+    choice4: '15',
+    answer: 1,
+},
+{
+    question: "What is Chandler's mom's occupation?",
+    choice1: 'doctor',
+    choice2: 'actress',
+    choice3: 'librarian',
+    choice4: 'author',
+    answer: 4,
+},
+{
+    question: "How did Chandler prove his friendship to Joey?",
+    choice1: 'break up with Kathy',
+    choice2: 'sat in a box',
+    choice3: 'invited him for a holiday',
+    choice4: 'got him and audition',
+    answer: 2,
+},
+{
+    question: "What did Chandler and Monica decide to do in Las Vegas?",
+    choice1: 'getting married',
+    choice2: 'gamble',
+    choice3: 'break up',
+    choice4: 'help Joey',
+    answer: 1,
+},
+{
+    question: "Who showed up when Chandler planned to propose?",
+    choice1: 'Janice',
+    choice2: 'his dad',
+    choice3: 'Richard',
+    choice4: 'Kathy',
+    answer: 3,
+},
+{
+    question: "What did Chandler started to wear that everyone thought he always had?",
+    choice1: "vests",
+    choice2: 'glasses',
+    choice3: 'watch',
+    choice4: 'bracelet',
+    answer: 2,
+},
+{
+    question: "Where did Chandler stalk Janice?",
+    choice1: 'West village',
+    choice2: 'East village',
+    choice3: 'Brooklyn',
+    choice4: 'Chelsea',
+    answer: 4,
+},
+{
+    question: "Who did Chandler ask as his best man?",
+    choice1: 'Ross',
+    choice2: 'Gunther',
+    choice3: "Joey",
+    choice4: "Mike",
+    answer: 1,
 },
 ];
 
