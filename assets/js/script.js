@@ -1,4 +1,5 @@
 const question = document.getElementById('question');
+const questionMonica = document.getElementById('questionMonica');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
@@ -346,7 +347,7 @@ let questionsRoss = [{
     question: "What did Ross buy for Phoebe that she never had as a kid?",
     choice1: 'globe',
     choice2: 'doll',
-    choice3: "rubik’s cube",
+    choice3: "rubik's cube",
     choice4: "bicycle",
     answer: 4,
 },
@@ -533,6 +534,7 @@ function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    availableQuestionsMonica = [...questionsMonica];
     getNewQuestion();
 }
 
