@@ -268,6 +268,90 @@ let questions = [{
 },
 ];
 
+// Ross questions
+
+let questions = [{
+    question: "What is Ross' ex-wife's name?",
+    choice1: 'Karen',
+    choice2: 'Carol',
+    choice3: 'Katy',
+    choice4: 'Cassie',
+    answer: 2,
+},
+{
+    question: "How did Ross get to his class on time to the other side of the city?",
+    choice1: 'by cab',
+    choice2: 'on the subway',
+    choice3: 'by roller skating',
+    choice4: 'running',
+    answer: 3,
+},
+{
+    question: "What did Ross learn during the end of his first marriage?",
+    choice1: 'karate',
+    choice2: 'tai chi',
+    choice3: 'taekwondo',
+    choice4: 'krav maga',
+    answer: 1,
+},
+{
+    question: "Where did Ross started dating Charlie?",
+    choice1: 'London',
+    choice2: 'Barbados',
+    choice3: 'Hawaii',
+    choice4: 'China',
+    answer: 2,
+},
+{
+    question: "What did Ross dress up as for Halloween?",
+    choice1: 'Indiana Jones',
+    choice2: 'Superman',
+    choice3: 'Spaceman',
+    choice4: 'Sputnik',
+    answer: 4,
+},
+{
+    question: "Whom after did Ross and Susan name their son?",
+    choice1: 'his dad',
+    choice2: 'hospital janitor',
+    choice3: 'his favourite scientist',
+    choice4: 'cab driver',
+    answer: 2,
+},
+{
+    question: "What pet did Ross’ messy girlfriend have?",
+    choice1: 'rabbit',
+    choice2: 'cat',
+    choice3: 'snake',
+    choice4: 'hamster',
+    answer: 4,
+},
+{
+    question: "What did Ross get when he started dating Emily?",
+    choice1: "earring",
+    choice2: 'watch',
+    choice3: 'book',
+    choice4: 'plane ticket',
+    answer: 1,
+},
+{
+    question: "What language did Ross start to learn to get his new apartment?",
+    choice1: 'Russian',
+    choice2: 'Croatian',
+    choice3: 'Dutch',
+    choice4: 'German',
+    answer: 3,
+},
+{
+    question: "What did Ross buy for Phoebe that she never had as a kid?",
+    choice1: 'globe',
+    choice2: 'doll',
+    choice3: "rubik’s cube",
+    choice4: "bicycle",
+    answer: 4,
+},
+];
+
 // points for each questions and maximum quiestions
 
 const SCORE_POINTS = 10;
