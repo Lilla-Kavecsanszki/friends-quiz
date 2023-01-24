@@ -3,6 +3,8 @@ const questionMonica = document.getElementById('questionMonica');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const choicesMonica = Array.from(document.getElementsByClassName('choice-text-monica'));
 const chooseButton = document.getElementById('choose-button');
+const playBtn = document.getElementById('play');
+const stopBtn = document.getElementById('stop');
 
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
@@ -22,6 +24,14 @@ function playMySoundtrack() {
     const music = document.getElementById("myAudio");
     music.play();
 } ;
+
+const music = document.getElementById("myAudio");
+let playSoundTrack = function() {music.play();};
+let stopSoundTrack = function() {music.pause();};
+
+playBtn.addEventListener('click', playSoundTrack, false);
+stopBtn.addEventListener('click', stopSoundTrack, false);
+
 
 //Load the page then start running the game
 
