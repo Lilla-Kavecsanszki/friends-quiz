@@ -167,6 +167,31 @@ h2 a:hover {
     background-color: rgba(72, 160, 79, .2);
 }
 
+#control-buttons {
+    text-align: center;
+    padding-bottom: 7%;
+    background-color: #f8d649;
+}
+
+i:active,
+i:hover {
+    color: #ed3833;
+    cursor: pointer;
+    transform: scale(1);
+    transform: scale(1.3);
+}
+
+i {
+    color: #48a04f;
+    font-size: 200%;
+    text-align: center;
+    background-color: #f8d649;
+}
+
+#play {
+    margin-right: 1%;
+}
+
 #game-area {
     height: 600px;
 }
