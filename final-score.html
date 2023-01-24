@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Friends Quiz</title>
 </head>
+
 <body>
     <header>
         <div class="hamburger-menu">
@@ -32,18 +33,21 @@
         </div>
     </header>
     <div class="quiz-container">
-        <div id="final-score" class="flex-center flex-column">
-            <h1 id="finalscore">0</h1>
+        <div id="results" class="flex-center flex-column">
+            <h1 id="final-score">0</h1>
             <form class="end-form-container">
                 <h2 id="put-your-name">Enter your name below!</h2>
                 <input type="text" name="name" id="user" placeholder="Enter your name">
-                <button class="btn" id="finalscorebutton" type="submit" onclick="saveHighScore(event)">Save your score!</button>
+                <button class="btn" id="finalscorebutton" type="submit" onclick="saveHighScore(e)">Save your
+                    score!</button>
             </form>
         </div>
-        <div id="high-scores" class="flex-center flex-column">
-            <h1 id="final-score">High Scores</h1>
+        <div id="leader-board" class="flex-center flex-column">
+            <h1 id="announcement">High Scores</h1>
             <ul id="high-scores-list"></ul>
-            <a href="index.html" class="btn">Home<i class="fa-solid fa-house-user"></i></a>
+            <div class="homepagebtn">
+                <a href="index.html" class="btn btn--highscores" class="btn">Home <i class="fa-solid fa-house-user"></i></a>
+            </div>
         </div>
     </div>
     <footer>
@@ -70,5 +74,7 @@
     </footer>
 
     <script src="assets/js/script.js"> </script>
+    <script src="assets/js/final-score.js"> </script>
 </body>
+
 </html>

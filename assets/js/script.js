@@ -1,7 +1,5 @@
 const question = document.getElementById('question');
-const questionMonica = document.getElementById('questionMonica');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-const choicesMonica = Array.from(document.getElementsByClassName('choice-text-monica'));
 const chooseButton = document.getElementById('choose-button');
 const playBtn = document.getElementById('play');
 const stopBtn = document.getElementById('stop');
@@ -136,7 +134,6 @@ function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    availableQuestionsMonica = [...questionsMonica];
     getNewQuestion();
 }
 
@@ -148,7 +145,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/final-score.html');
+        return window.location.assign('final-score.html');
     }
 
     // Shows the player which question they are at and their progess
