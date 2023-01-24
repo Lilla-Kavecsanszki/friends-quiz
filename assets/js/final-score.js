@@ -3,7 +3,7 @@ const saveButton = document.getElementById("finalscorebutton");
 const finalScore = document.getElementById("final-score");
 const mostRecentScore = document.getElementById("mostRecentScore");
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const highScores = JSON.parse(localStorage.getItem('high-scores')) || [];
 
 const MAX_HIGH_SCORES = 3;
 finalScore.innerText = mostRecentScore;
@@ -29,3 +29,10 @@ highScores.splice(3);
 localStorage.setItem('highScores', JSON.stringify(highScores));
 window.location.assign('/')
 };
+
+const highScoresList = document.getElementById('high-scores-list');
+
+highScoresList.innerHTML = 
+highScores.map(score => {
+    return `<li class="high-score">${score.name} - ${score.score}</li>`
+}).join('');

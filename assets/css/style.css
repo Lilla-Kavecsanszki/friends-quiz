@@ -542,3 +542,14 @@ padding-left: 0;
 
 /* final-score page */
 
+
+/* high-scores page */
+
+#high-scores-list {
+    list-style: none;
+    margin-bottom: 3%;
+}
+
+#high-scores {
+    
+}
