@@ -33,8 +33,7 @@
         </div>
     </header>
     <section id="container">
-        <div id="logo-image" role="img"
-            aria-label="Profile photo of the six characters">
+        <div id="logo-image" role="img" aria-label="Profile photo of the six characters">
             <div id="cover-text-outer">
                 <div id="cover-text">
                     <h1>The Quiz</h1>
@@ -44,7 +43,12 @@
     </section>
     <section id="game-area">
         <h2>
-            <a href="#girls" aria-label="Go to the Quiz">Let's start! Now pick your friend!</a></h2>
+            <a id="choose-button" href="#girls" aria-label="Go to the Quiz">
+                <audio id="myAudio">
+                    <source src="assets/audio/Friends.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element :(
+                </audio>Let's start! Now pick your friend!
+            </a></h2>
         <div id="characters">
             <div id="girls">
                 <a href="rachel.html" class="btn btn-character btn--red">Rachel Greene</a>

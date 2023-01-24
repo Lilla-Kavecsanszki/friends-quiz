@@ -2,6 +2,8 @@ const question = document.getElementById('question');
 const questionMonica = document.getElementById('questionMonica');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const choicesMonica = Array.from(document.getElementsByClassName('choice-text-monica'));
+const chooseButton = document.getElementById('choose-button');
+const music = document.getElementById("myAudio");
 
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
@@ -12,6 +14,23 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
+// Choose a friend button audio
+
+document.addEventListener("onclick", document.getElementById('myAudio') {
+    playAudio();
+    stopAudio
+});
+
+function playAudio() {
+    music.play(music);
+}
+
+function stopAudio() {
+    music.stop(music);
+}
+
+onclick="document.getElementById('myAudio').play()
 
 //Load the page then start running the game
 
