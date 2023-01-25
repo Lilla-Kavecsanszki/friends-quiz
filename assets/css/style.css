@@ -226,11 +226,6 @@ h2 a:hover {
     font-weight: bold;
 }
 
-#wrong {
-    color: #ed3833;
-    font-weight: bold;
-}
-
 /* Buttons */
 
 #instruction {
@@ -328,7 +323,7 @@ h2 a:hover {
 
 #instruction-title {
     font-size: 300%;
-    padding-top: 4%; 
+    padding-top: 4%;
 }
 
 #title {
@@ -363,7 +358,7 @@ p {
     animation-iteration-count: infinite;
 }
 
-/* turkey animation - https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B */ 
+/* turkey animation - https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B */
 
 @keyframes shake {
     0% {
@@ -484,7 +479,6 @@ footer {
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: rgba(20,28,30, .5);
     transform: scale(1.02);
     transform: transform 100ms;
 }
@@ -501,12 +495,12 @@ footer {
 }
 
 .correctanswer {
-background: rgba(72, 160, 79, 0.8);
+    background: rgb(72, 160, 79);
 }
 
 .wronganswer {
-    background: rgba(237, 56, 51, 0.8);
-    }
+    background: rgb(237, 56, 51);
+}
 
 #displaybar {
     display: flex;
@@ -521,13 +515,9 @@ background: rgba(72, 160, 79, 0.8);
     text-align: center;
 }
 
-#progress-text {
-padding-left: 0;
-}
-
 #progressbar {
     width: 160px;
-    height: 1.5rem;
+    height: 24px;
     border: 3px solid #44aedd;
     margin-top: 7%;
     border-radius: 50px;
@@ -542,20 +532,23 @@ padding-left: 0;
 
 /* final-score page */
 
+#results {
+    padding-bottom: 3%;
+}
 
-/* high-scores page */
+#final-score {
+    color: #44aedd;
+    font-weight: bold;
+    font-size: 200%;
+}
 
 .homepagebtn i {
-   color: #8f4ec4;
+    color: #8f4ec4;
 }
 
 .homepagebtn i:active,
 .homepagebtn i:hover {
     color: whitesmoke;
- }
-
-.homepagebtn:active,
-.homepagebtn:hover {
 }
 
 #high-scores-list {
@@ -563,6 +556,4 @@ padding-left: 0;
     margin-bottom: 3%;
 }
 
-#high-scores {
-
-}
+#high-scores {}

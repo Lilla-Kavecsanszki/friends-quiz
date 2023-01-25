@@ -1,8 +1,5 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-const chooseButton = document.getElementById('choose-button');
-const playBtn = document.getElementById('play');
-const stopBtn = document.getElementById('stop');
 
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
@@ -14,30 +11,95 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-// Choose a friend button audio
-
-chooseButton.addEventListener('click', playMySoundtrack); 
-
-function playMySoundtrack() {
-    const music = document.getElementById("myAudio");
-    music.play();
-} ;
-
-const music = document.getElementById("myAudio");
-let playSoundTrack = function() {music.play();};
-let stopSoundTrack = function() {music.pause();};
-
-playBtn.addEventListener('click', playSoundTrack, false);
-stopBtn.addEventListener('click', stopSoundTrack, false);
-
-
 //Load the page then start running the game
 
 document.addEventListener("DOMContentLoaded", function () {
     startGame();
 });
 
+// Rachel questions
 
+let questions = [{
+    question: 'What plastic surgery did Rachel have in high school?',
+    choice1: 'breast',
+    choice2: 'nose',
+    choice3: 'ears',
+    choice4: 'eyes',
+    answer: 2,
+},
+{
+    question: 'How old was Rachel when she broke up with Tag?',
+    choice1: '25',
+    choice2: '32',
+    choice3: '28',
+    choice4: '30',
+    answer: 4,
+},
+{
+    question: "Where was Rachel's first date with Ross?",
+    choice1: 'museum',
+    choice2: 'café',
+    choice3: 'restaurant',
+    choice4: 'cinema',
+    answer: 1,
+},
+{
+    question: "What is Rachel's kid's name?",
+    choice1: 'Ruth',
+    choice2: 'James',
+    choice3: 'Emma',
+    choice4: 'River',
+    answer: 3,
+},
+{
+    question: "Where was Rachel's dream job that she got offered after Ralph Lauren?",
+    choice1: 'Barcelona',
+    choice2: 'London',
+    choice3: 'Milan',
+    choice4: 'Paris',
+    answer: 4,
+},
+{
+    question: "What did Rachel shape Emma's birthday cake into?",
+    choice1: 'flower',
+    choice2: 'bunny',
+    choice3: 'bow',
+    choice4: 'kitty',
+    answer: 2,
+},
+{
+    question: 'Why did Rachel get in trouble with the police?',
+    choice1: 'stealing',
+    choice2: 'tax fraud',
+    choice3: 'jaywalking',
+    choice4: 'speeding',
+    answer: 4,
+},
+{
+    question: 'What did Gavin bring to Rachel after they kissed?',
+    choice1: 'scarf',
+    choice2: 'jewellery',
+    choice3: 'soup',
+    choice4: 'medicine',
+    answer: 3,
+},
+{
+    question: "What is Rachel's ex-fiancé's occupation?",
+    choice1: 'dentist',
+    choice2: 'doctor',
+    choice3: 'lawyer',
+    choice4: 'accountant',
+    answer: 1,
+},
+{
+    question: "What is Rachel's favourite flower?",
+    choice1: 'rose',
+    choice2: 'daisy',
+    choice3: 'tulip',
+    choice4: 'lily',
+    answer: 4,
+},
+];
 
 // points for each questions and maximum quiestions
 
@@ -63,7 +125,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('final-score.html');
+        return window.location.assign('/final-score.html');
     }
 
     // Shows the player which question they are at and their progess
@@ -105,13 +167,12 @@ choices.forEach((choice) => {
 
         /**
          * Set Time Out to step for new question
-         * */
+         */
 
-        const myTimeout = setTimeout(function () {
+        const timeoutId = setTimeout(function() {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
         }, 800); //milliseconds after the new question will appear
-
     });
 });
 
