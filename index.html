@@ -41,59 +41,98 @@
             </div>
         </div>
     </section>
-    <section id="game-area">
-        <h2><a id="choose-button" href="#girls" aria-label="Go to the Quiz">Let's start! Now pick your friend!
+    <section id="start-area">
+        <h2><a id="choose-button" href="#characters" aria-label="Go to the Quiz">Let's start! Now pick your friend!
             </a></h2>
         <audio id="myAudio">
             <source src="assets/audio/friends.mp3" type="audio/mpeg">
         </audio>
-        <div id="characters">
-            <div id="girls">
+    </section>
+    <!--start-area-->
+    <div id="main-window">
+        <div class="window" id="choosing-window">
+            <div id="characters">
                 <div id="control-buttons">
                     <button id="play"><i class="fa-solid fa-play"></i></button>
                     <button id="stop"><i class="fa-solid fa-stop"></i></button>
                 </div>
-                <a href="rachel.html" class="btn btn-character btn--red">Rachel Greene</a>
-                <a href="monica.html" class="btn btn-character btn--green">Monica Geller</a>
-                <a href="phoebe.html" class="btn btn-character btn--blue">Phoebe Buffay</a>
+                <div id="girls">
+                    <button class="character btn btn-character btn--red">Rachel Greene</button>
+                    <button class="character btn btn-character btn--green">Monica Geller</button>
+                    <button class="character btn btn-character btn--blue">Phoebe Buffay</button>
+                </div>
+                <div id="boys">
+                    <button class="character btn btn-character btn--red">Ross Geller</button>
+                    <button class="character btn btn-character btn--green">Chandler Bing</button>
+                    <button class="character btn btn-character btn--blue">Joey Tribbiani</button>
+                </div>
             </div>
-            <div id="boys">
-                <a href="ross.html" class="btn btn-character btn--red">Ross Geller</a>
-                <a href="chandler.html" class="btn btn-character btn--green">Chandler Bing</a>
-                <a href="joey.html" class="btn btn-character btn--blue">Joey Tribbiani</a>
+            <!--"characters"-->
+        </div>
+        <!--choosing-window-->
+        <div class="window" id="quiz-window">
+            <div id="quiz" class="flex-column justify-center">
+                <div id="displaybar">
+                    <div class="displaybar-item">
+                        <p id="progress-text" class="displaybar-prefix">
+                            Question
+                        </p>
+                        <div id="progressbar">
+                            <div id="progressbar-full"></div>
+                        </div>
+                    </div>
+                    <div class="displaybar-item">
+                        <p class="displaybar-prefix">Score</p>
+                        <h1 class="displaybar-main-text" id="score">0</h1>
+                    </div>
+                </div><!--displaybar-->
+                <h1 id="question">What is the answer for this question?</h1>
+                <div id="choice-outer-box">
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text" data-number="1">Choice</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text" data-number="3">Choice 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text" data-number="4">Choice 4</p>
+                    </div>
+                </div>
+                <!--choice-outer-box-->
+            </div><!--quiz-->
+        </div><!--quiz-window-->
+    </div><!--main-window-->
+        <footer>
+            <div id="footer-content">
+                <ul class="social-networks">
+                    <li id="linkedin">
+                        <a href="https://www.linkedin.com/in/lilla-kavecsanszki-31888a100/" target="_blank"
+                            rel="noopener" aria-label="Visit my LinkedIn page (opens in a new tab)">
+                            <em class="fa-brands fa-linkedin"></em>
+                        </a>
+                    </li>
+                    <li id="github">
+                        <a href="https://github.com/Lilla-Kavecsanszki" target="_blank" rel="noopener"
+                            aria-label="Visit my Github page (opens in a new tab)">
+                            <em class="fa-brands fa-github"></em>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <!--"characters"-->
-        <div class="score-area">
-            <a href="final-score.html" class="btn btn--highscores" class="btn">High Scores</a>
-        </div>
-    </section>
-    <!--"score-area"-->
+            <div id="copyright">
+                <p>@ 2023 Copyright: Lilla Kavecsanszki all rights reserved</p>
+                <p>This website is for educational use.</p>
+            </div>
+        </footer>
 
-    <footer>
-        <div id="footer-content">
-            <ul class="social-networks">
-                <li id="linkedin">
-                    <a href="https://www.linkedin.com/in/lilla-kavecsanszki-31888a100/" target="_blank" rel="noopener"
-                        aria-label="Visit my LinkedIn page (opens in a new tab)">
-                        <em class="fa-brands fa-linkedin"></em>
-                    </a>
-                </li>
-                <li id="github">
-                    <a href="https://github.com/Lilla-Kavecsanszki" target="_blank" rel="noopener"
-                        aria-label="Visit my Github page (opens in a new tab)">
-                        <em class="fa-brands fa-github"></em>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="copyright">
-            <p>@ 2023 Copyright: Lilla Kavecsanszki all rights reserved</p>
-            <p>This website is for educational use.</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/script.js"> </script>
+        <script src="assets/js/script.js"> </script>
 </body>
 
 </html>

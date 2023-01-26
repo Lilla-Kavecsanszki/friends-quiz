@@ -129,6 +129,7 @@ header {
     height: 600px;
     width: auto;
     background: url('../images/friends_logo.png') no-repeat right center;
+    position: relative;
 }
 
 /* cover - text */
@@ -150,7 +151,7 @@ header {
     left: 150px;
 }
 
-/* game-area */
+/* choose your character part */
 
 h2 {
     margin-top: 2.5%;
@@ -192,33 +193,22 @@ h2 a:hover {
     margin-right: 1%;
 }
 
-#game-area {
-    height: 600px;
+#start-area {
+    height: 100px;
 }
 
 #girls {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     padding-top: 5%;
 }
 
 #boys {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     padding-top: 5%;
-}
-
-.score-area {
-    text-align: center;
-    padding: 5%;
-}
-
-.scores {
-    display: inline-block;
-    padding: 25px;
-}
-
-.score-area>p {
-    display: inline;
-    font-size: 150%;
 }
 
 #score {
@@ -227,11 +217,6 @@ h2 a:hover {
 }
 
 /* Buttons */
-
-#instruction {
-    padding-left: 15%;
-    padding-top: 8%;
-}
 
 .btn {
     letter-spacing: 1.2px;
@@ -294,22 +279,6 @@ h2 a:hover {
 .btn--green:active,
 .btn--green:hover {
     background-color: #48a04f;
-    color: whitesmoke;
-    border-color: whitesmoke;
-}
-
-.btn--highscores {
-    color: #8f4ec4;
-    font-weight: bold;
-    border-radius: 20%;
-    font-size: 200%;
-    background-color: whitesmoke;
-    margin: 15px;
-}
-
-.btn--highscores:active,
-.btn--highscores:hover {
-    background-color: #8f4ec4;
     color: whitesmoke;
     border-color: whitesmoke;
 }
@@ -456,8 +425,14 @@ footer {
 
 /* Quiz pages */
 
-.quiz-container {
-    padding: 120px 300px;
+#main-window {
+    display: block;
+    justify-content: center;
+}
+
+.window {
+    clear: both;
+    margin: 10% 20%;
 }
 
 #question {
@@ -530,7 +505,7 @@ footer {
     width: 0%;
 }
 
-/* final-score page */
+/* final-score part */
 
 #results {
     padding-bottom: 3%;
@@ -550,10 +525,3 @@ footer {
 .homepagebtn i:hover {
     color: whitesmoke;
 }
-
-#high-scores-list {
-    list-style: none;
-    margin-bottom: 3%;
-}
-
-#high-scores {}
