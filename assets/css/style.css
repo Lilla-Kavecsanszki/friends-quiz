@@ -125,9 +125,13 @@ header {
 
 /* Logo */
 
+#container {
+    width: 100%;
+}
+
 #logo-image {
     height: 600px;
-    width: auto;
+    width: 100%;
     background: url('../images/friends_logo.png') no-repeat right center;
     position: relative;
 }

@@ -571,12 +571,32 @@ document.addEventListener("DOMContentLoaded", function () {
             characters[i].style.display = "inline";
         }
       }
-    
+
         startGame();
     });
     
 /**
- * Start a new quiz
+ * Flip the windows where the game meant to be
+ * windowName = id of the window which should be visible at the moment
+ */
+function displayWindow(windowName) {
+    let windows = document.getElementsByClassName("window");
+    for (let window of windows) {
+      if (window.id === windowlName) {
+        window.style.display = "block";
+      } else window.style.display = "none";
+    }
+  }
+
+/**
+ * show the list of characters to choose from
+ */
+function showCharacters() {
+    showWindow("choosing-window");
+  }
+
+/**
+ * Start the quiz
  * */
 
 function startGame() {
@@ -588,6 +608,9 @@ function startGame() {
     // get the index of the topic to use when accessing the quiz nested array
   let characterNumber = quiz.map(function (e) {
     return e.characterName;
+
+    // show the quiz window
+  showWindow("quiz-window");
   })
 }
 
@@ -671,22 +694,3 @@ function incrementScore(num) {
 
 startGame();
 
-/**
- * Flip the windows where the game meant to be
- * windowName = id of the window which should be visible at the moment
- */
-function displayWindow(windowName) {
-    let windows = document.getElementsByClassName("window");
-    for (let window of windows) {
-      if (window.id === windowlName) {
-        window.style.display = "block";
-      } else window.style.display = "none";
-    }
-  }
-
-/**
- * show the list of characters to choose from
- */
-function showCharacters() {
-    showWindow("choosing-window");
-  }
