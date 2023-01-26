@@ -1,10 +1,3 @@
-//Load the page then start running the game
-
-document.addEventListener("DOMContentLoaded", function () {
-    startGame();
-});
-
-
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const chooseButton = document.getElementById('choose-button');
@@ -44,7 +37,7 @@ let stopSoundTrack = function () {
 // Quiz questions
 
 const quiz = [{
-        character: "Rachel Greene",
+    characterName: "Rachel Greene",
         questions: [{
                 question: 'What plastic surgery did Rachel have in high school?',
                 choice1: 'breast',
@@ -128,7 +121,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Monica Geller",
+        characterName: "Monica Geller",
         questions: [{
                 question: 'How many categories of towels does Monica have?',
                 choice1: '5',
@@ -212,7 +205,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Phoebe Buffay",
+        characterName: "Phoebe Buffay",
         questions: [{
                 question: "What did Phoebe's mom give her as a lesson before saying yes to surrogate her brother's kids?",
                 choice1: 'doll',
@@ -296,7 +289,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Ross Geller",
+        characterName: "Ross Geller",
         questions: [{
                 question: "What is Ross' ex-wife's name?",
                 choice1: 'Karen',
@@ -380,7 +373,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Chandler Bing",
+        characterName: "Chandler Bing",
         questions: [{
                 question: "Where was Chandler's dad's residency show?",
                 choice1: 'New York',
@@ -464,7 +457,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Joey Tribbiani",
+        characterName: "Joey Tribbiani",
         questions: [{
                 question: "How many sisters does Joey have?",
                 choice1: '2',
@@ -554,6 +547,34 @@ const quiz = [{
 const SCORE_POINTS = 1;
 const MAX_QUESTIONS = 10;
 
+//Load the page then start running the game
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /**
+     * start the choosen character's quiz array
+     **  */ 
+    
+    const characters = document.getElementsByClassName("btn-character");
+    
+    for (let character of characters) {
+        character.addEventListener("click", startGame);
+        loadCharacters();
+      }
+    
+      function loadCharacters() {
+    
+        let characters = document.getElementsByClassName("btn-character");
+    
+        for (let i = 0; (i < 6) && (i < quiz.length); i++) {
+            characters[i].innerText = quiz[i].characterName;
+            characters[i].style.display = "inline";
+        }
+      }
+    
+        startGame();
+    });
+    
 /**
  * Start a new quiz
  * */
@@ -563,27 +584,13 @@ function startGame() {
     let score = document.getElementById('score');
     availableQuestions = [...questions];
     getNewQuestion();
+
+    // get the index of the topic to use when accessing the quiz nested array
+  let characterNumber = quiz.map(function (e) {
+    return e.characterName;
+  })
 }
 
-/**
- * start the choosen character's quiz array
- **  */ 
-
-const characters = document.getElementsByClassName("character");
-
-for (let character of characters) {
-    topic.addEventListener("click", startGame);
-  }
-
-  function loadCharacters() {
-
-    let characters = document.getElementsByClassName("character");
-    
-    for (let i = 0; (i < 6) && (i < quiz.length); i++) {
-        characters[i].innerText = quiz[i].character;
-        characters[i].style.display = "inline";
-    }
-  }
 
 /** 
  * New Question 
@@ -645,9 +652,41 @@ choices.forEach((choice) => {
     });
 });
 
+/**
+ *  Gets the current score from the DOM and increments it
+ */
+
+function incrementScore() {
+
+	let oldScore = parseInt(document.getElementById("score").innerText);
+	document.getElementById("score").innerText = ++oldScore;
+
+}
+
+/*
 function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
-}
+} */
 
 startGame();
+
+/**
+ * Flip the windows where the game meant to be
+ * windowName = id of the window which should be visible at the moment
+ */
+function displayWindow(windowName) {
+    let windows = document.getElementsByClassName("window");
+    for (let window of windows) {
+      if (window.id === windowlName) {
+        window.style.display = "block";
+      } else window.style.display = "none";
+    }
+  }
+
+/**
+ * show the list of characters to choose from
+ */
+function showCharacters() {
+    showWindow("choosing-window");
+  }
