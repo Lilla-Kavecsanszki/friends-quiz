@@ -4,13 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     startGame();
 });
 
-const character = localStorage.getItem("character");
+
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const chooseButton = document.getElementById('choose-button');
 const playBtn = document.getElementById('play');
 const stopBtn = document.getElementById('stop');
-
 
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
@@ -26,6 +25,9 @@ let availableQuestions = [];
 
 chooseButton.addEventListener('click', playMySoundtrack);
 
+playBtn.addEventListener('click', playSoundTrack, false);
+stopBtn.addEventListener('click', stopSoundTrack, false);
+
 function playMySoundtrack() {
     const music = document.getElementById("myAudio");
     music.play();
@@ -39,13 +41,10 @@ let stopSoundTrack = function () {
     music.pause();
 };
 
-playBtn.addEventListener('click', playSoundTrack, false);
-stopBtn.addEventListener('click', stopSoundTrack, false);
-
 // Quiz questions
 
 const quiz = [{
-        character: "Rachel",
+        character: "Rachel Greene",
         questions: [{
                 question: 'What plastic surgery did Rachel have in high school?',
                 choice1: 'breast',
@@ -129,7 +128,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Monica",
+        character: "Monica Geller",
         questions: [{
                 question: 'How many categories of towels does Monica have?',
                 choice1: '5',
@@ -213,7 +212,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Phoebe",
+        character: "Phoebe Buffay",
         questions: [{
                 question: "What did Phoebe's mom give her as a lesson before saying yes to surrogate her brother's kids?",
                 choice1: 'doll',
@@ -297,7 +296,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Ross",
+        character: "Ross Geller",
         questions: [{
                 question: "What is Ross' ex-wife's name?",
                 choice1: 'Karen',
@@ -381,7 +380,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Chandler",
+        character: "Chandler Bing",
         questions: [{
                 question: "Where was Chandler's dad's residency show?",
                 choice1: 'New York',
@@ -465,7 +464,7 @@ const quiz = [{
         ]
     },
     {
-        character: "Joey",
+        character: "Joey Tribbiani",
         questions: [{
                 question: "How many sisters does Joey have?",
                 choice1: '2',
@@ -565,6 +564,26 @@ function startGame() {
     availableQuestions = [...questions];
     getNewQuestion();
 }
+
+/**
+ * start the choosen character's quiz array
+ **  */ 
+
+const characters = document.getElementsByClassName("character");
+
+for (let character of characters) {
+    topic.addEventListener("click", startGame);
+  }
+
+  function loadCharacters() {
+
+    let characters = document.getElementsByClassName("character");
+    
+    for (let i = 0; (i < 6) && (i < quiz.length); i++) {
+        characters[i].innerText = quiz[i].character;
+        characters[i].style.display = "inline";
+    }
+  }
 
 /** 
  * New Question 
