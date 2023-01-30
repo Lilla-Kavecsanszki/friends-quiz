@@ -1,17 +1,27 @@
 # Friends, The Quiz
 
-This website is for all users
+This website is for all users who are fans of the sitcom, Friends, who watched the series and have good memories with it. The users can test their knowledge on the characters and the series in general as the website is offering a selection of quiz questions dedicated to each friends characters. It is a fun way for the user to refresh their memory of the topic. At the end of each quiz they can see their results, as well, how many points they received. 
+
+Of course the game is designed to be easily used on any device and so to be inclusive. This means that the site needs to be responsive, allowing visitors to view it on any sized device without losing the quality of experience. The main focus of the site is to be engaging, colourful and motivating while providing real story-based questions and true answers to those based on Friends. 
 
 [Link to my website](https://lilla-kavecsanszki.github.io/friends-quiz/)
 
 
 ![Am I Responsive?](readme-images/responsive.png "Am I Responsive?")
 
-[I Am Responsive](https://ui.dev/amiresponsive?url=https://lilla-kavecsanszki.github.io/On-The-Sunny-Side/index.html)
+[I Am Responsive](https://ui.dev/amiresponsive?url=https://lilla-kavecsanszki.github.io/friends-quiz/)
 
 The business goals of this website are:
 
--	Provide high-quality examples 
+-	Provide high-quality questionnaires based on the sitcom
+-   Excellent UX to keep potential clients on site long enough to discover all features and then invite their friends too 
+    for a game, the sticky hamburger menu button is an excellent addition for an easier and hassle-free navigation throughout the website.
+
+The customer goals of this website are:
+
+-   Search for a fun site, where they can test their knowledge of the sitcom
+-   A website where they can find a character based game, to be able to choose a selected quiz based on their 
+    favourite character or have a different one for each friend. Not just a generalised Friends quiz like, on other websites. 
 
 # User Experience (UX)
 
@@ -22,16 +32,29 @@ The business goals of this website are:
 The ideal client for this business is:
 
 -	English speaking
--	
+-	Friends fan
+-   A person who watched the series 
+-   Individuals, couples, families, or groups
 
 Visitors of this website search for:
 
--	An 
+-	A knowledgeable site, where they can find story-based questions and challenging, engaging answer options 
+
+This website is the best way to help them achieve these goals because:
+
+- Most other similar sites are limited in their quiz games to a general Friends quiz, while this website offeres individual questionnaires for each characters
+- The website also offers true story-based question scenarios and 4 answers to choose from that are just challenging enough
+
 
 This website:
 
--	Is easy to navigate due to its sticky navbar that scrolls with the user on all pages.
--
+-	Is easy to navigate due to its sticky hamburger menu button scrolls with the user on all pages.
+-   Gives the customers options and access to useful and learnable information.
+-   Gives the customers the information they need without overloading them or distracting them from their original ideas  
+    or wishes.
+-   Guides them and their curiosity to the goal of the website
+-   Has social media site buttons in the footer, which open them up in new tabs in order to not distract the customers  
+    away from the website but a great help for the designer to showcase her other projects and work.  
 
 User stories
 
@@ -71,7 +94,7 @@ I used [A11y](https://color.a11y.com) the Color Contrast Accessibility Validator
 
 ![My Colour Palette](readme-images/colorkit.png "My Colour Palette")
 
-[My Colour Palette](https://colorkit.co/palette/f5f5f5-ffdab9-4d4044-353838/)
+[My Colour Palette](https://colorkit.co/palette/f5f5f5-f8d649-48a04f-44aedd-8f4ec4-ed3833-141c1e/)
 
 
 ### Typography
@@ -128,11 +151,11 @@ main, and the folder option to /root
 
 ## How to Clone
 
-Locate the main page of On-The-Sunny-Side repository, click the Code button to the left of the green Gitpod button, then choose Local. Copy the URL of the repository, you can click on headings for HTTPS, SSH, and Github CLI to find their individual links. Open your own terminal in your editor and change the current working directory to the location of where you want the cloned directory to be. In the terminal type git clone, and then paste the URL you copied from On-The-Sunny-Side repository page. Press enter to complete.
+Locate the main page of Friends-Quiz repository, click the Code button to the left of the green Gitpod button, then choose Local. Copy the URL of the repository, you can click on headings for HTTPS, SSH, and Github CLI to find their individual links. Open your own terminal in your editor and change the current working directory to the location of where you want the cloned directory to be. In the terminal type git clone, and then paste the URL you copied from Friends-Quiz repository page. Press enter to complete.
 
 ## How to Fork
 
-Locate the main page of On-The-Sunny-Side repository. Click the fork button in the top right of the screen, between the watch, and the star buttons.
+Locate the main page of Friends-Quiz repository. Click the fork button in the top right of the screen, between the watch, and the star buttons.
 
 # Testing
 
@@ -169,26 +192,24 @@ I asked friends and family to look at the site on their devices and report any i
 
 ## Content
 
-The text for the How to Play? page and the content for the quiz games were a creative work of Georgina Kavecsanszki. 
+The text for the 'How to Play?' page and the content for the quiz games were a creative work of Georgina Kavecsanszki. 
 
 ## Media
+
+The images that are used on this site were obtained from;
+
+https://www.kindpng.com/imgv/hJiJhx_phoebe-buffay-rachel-green-ross-geller-social-group/
+https://stock.adobe.com/uk/search?k=Friends+sitcom&search_type=usertyped
+
+The soundtrack audio that is used on the website was obtained from;
+
+https://archive.org/details/tvtunes_31736
+
 
 
 https://www.shutterstock.com/image-vector/yellow-vintage-frame-peephole-on-white-2215146543
 
-https://stock.adobe.com/uk/search?k=Friends+sitcom&search_type=usertyped
-
-https://www.kindpng.com/imgv/hJiJhx_phoebe-buffay-rachel-green-ross-geller-social-group/
-
 https://seeklogo.com/free-vector-logos/friends
-
-https://www.fontspace.com/category/friends
-
-https://archive.org/details/tvtunes_31736
-
-https://stock.adobe.com/uk/search?k=Friends+sitcom&search_type=usertyped
-
-https://archive.org/details/tvtunes_31736 - audio
 
 
 ## Acknowledgments and Code

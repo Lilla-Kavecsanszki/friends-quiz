@@ -252,13 +252,13 @@ h2 a:hover {
 }
 
 .btn--blue {
-    color: #26a7de;
+    color: #2187B4;
     font-weight: bold;
 }
 
 .btn--blue:active,
 .btn--blue:hover {
-    background-color: #26a7de;
+    background-color: #2187B4;
     color: whitesmoke;
     border-color: whitesmoke;
 }
