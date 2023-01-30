@@ -216,7 +216,7 @@ h2 a:hover {
 }
 
 #score {
-    color: #48a04f;
+    color: 008000;
     font-weight: bold;
 }
 
@@ -252,13 +252,13 @@ h2 a:hover {
 }
 
 .btn--blue {
-    color: #44aedd;
+    color: #26a7de
     font-weight: bold;
 }
 
 .btn--blue:active,
 .btn--blue:hover {
-    background-color: #44aedd;
+    background-color: #26a7de;
     color: whitesmoke;
     border-color: whitesmoke;
 }
