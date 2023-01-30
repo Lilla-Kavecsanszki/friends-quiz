@@ -58,8 +58,10 @@ This website:
 
 User stories
 
-1.	As a viewer of the website, I want to easily navigate the site, so I can find what I need efficiently.
-2.	
+1.	As a viewer of the website, I want to easily navigate the site, so I can find what I need (most importantly, the 
+    quiz efficiently.
+2.	As a viewer of the website, I want to understand what the game is about.
+4.  As a viewer of the website, I want to be able to see my final result and progression before thats.
 
 # Wireframes
 
@@ -101,13 +103,17 @@ I used [A11y](https://color.a11y.com) the Color Contrast Accessibility Validator
 
 I used [Google Fonts](https://fonts.google.com/) to import the following fonts to the site.
 
-The primary font used for headings and the navigation menu is Poiret One, this was chosen as it's easily readable, stylish with a little fun, and aims to give the idea of a modern and clean design.
+The primary font used for the Quiz logo and character buttons is Shadows Into Light, this was chosen because I found this font to be the closest to the one displayed in the title of the series. Therefore the user associates straight away to the topic of the website, without much explanation. 
 
-![Poiret One Font](readme-images/poiret-one.png "Poiret One Font")
+![Shadows Into Light Font](readme-images/Shadows%20Into%20Light-font.png "Shadows Into Light Font")
 
-The secondary font used for the body is Montserrat which was selected for its clear readability, which works well with Poiret One to maintain an elegant outcome.
+The secondary font used for the body is Ubuntu which was selected for its clear readability, that works well with Shadows Into Light to maintain the cheerful and fun outcome.
 
-![Montserrat Font](readme-images/montserrat.png "Montserrat Font")
+![Ubuntu Font](readme-images/Ubuntu-font.png "Ubuntu Font")
+
+I also chose a third font for the footer text, Quicksand, as I wanted to implement a much lighter font for that purpose, not to be distractive for the user.
+
+![Quicksand Font](readme-images/Quicksand-font.png "Quicksand Font")
 
 # Languages Used
 
