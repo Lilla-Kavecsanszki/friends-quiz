@@ -61,10 +61,13 @@ I used [A11y](https://color.a11y.com) the Color Contrast Accessibility Validator
 
 ### Colour Scheme
 
-- Peachpuff #ffdab9
-- Very dark grayish cyan #353838
-- Very dark grayish pink #4d4044
-- Whitesmoke #f5f5f5, #ffffff
+- Bright yellow #f8d649
+- Very dark (mostly black) cyan #141c1e
+- Dark moderate lime green #48a04f
+- Bright red #ed3833
+- Soft blue #44aedd
+- Moderate violet #8f4ec4  
+- Whitesmoke #f5f5f5
 
 ![My Colour Palette](readme-images/colorkit.png "My Colour Palette")
 
