@@ -541,6 +541,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Choose a friend button audio
+let playSoundTrack = function () {
+    music.play();
+};
+let stopSoundTrack = function () {
+    music.pause();
+};
 
 chooseButton.addEventListener('click', playMySoundtrack);
 
@@ -552,12 +558,7 @@ function playMySoundtrack() {
     music.play();
 };
 
-let playSoundTrack = function () {
-    music.play();
-};
-let stopSoundTrack = function () {
-    music.pause();
-};
+
 
 // load the character names
 
