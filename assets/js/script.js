@@ -629,7 +629,7 @@ function getNewQuestion() {
         localStorage.setItem('mostRecentScore', score);
 
         //giving an encouraging message
-        let correctAnswers = document.getElementById("correct-answers").innerText
+        let correctAnswers = document.getElementById("score").innerText
         if (correctAnswers > 7) {
             document.getElementById("correct-answers").innerText = "End of the quiz!\n Hooray !! You are a true friend!"
         } else {
