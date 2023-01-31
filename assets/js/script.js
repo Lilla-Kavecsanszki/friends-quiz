@@ -538,23 +538,6 @@ document.addEventListener("DOMContentLoaded", function () {
        // startGame();
     });
     
-    const characters = document.getElementsByClassName("btn-character");
-    
-    for (let character of characters) {
-        character.addEventListener("click", startGame);
-        loadCharacters();
-      }
-    
-      function loadCharacters() {
-    
-        let characters = document.getElementsByClassName("btn-character");
-    
-        for (let i = 0; (i < 6) && (i < quiz.length); i++) {
-            characters[i].innerText = quiz[i].characterName;
-            characters[i].style.display = "inline";
-        }
-      }
-    
 // Choose a friend button audio
 
 chooseButton.addEventListener('click', playMySoundtrack);
@@ -563,6 +546,7 @@ playBtn.addEventListener('click', playSoundTrack, false);
 stopBtn.addEventListener('click', stopSoundTrack, false);
 
 function playMySoundtrack() {
+  
     music.play();
 };
 
@@ -573,6 +557,33 @@ let stopSoundTrack = function () {
     music.pause();
 };
 
+   
+function loadCharacters() {
+    const characters = document.getElementsByClassName("btn-character");
+   
+   for (let character of characters) {
+       console.log(character)
+       character.addEventListener("click",()=> startGame(character.textContent));
+      
+     }
+   
+      console.log('here')
+   
+       for (let i = 0;i < 6; i++) {
+          characters[i].innerText = quiz[i].characterName;
+           // characters[i].innerText ="hello";
+           characters[i].style.display = "inline";
+       }
+}
+
+/**
+ * show the list of characters to choose from
+ */
+
+function showCharacters() {
+    displayWindow("choosing-window");
+  }
+    
 /**
  * Flip the windows where the game meant to be
  * windowName = id of the window which should be visible at the moment
