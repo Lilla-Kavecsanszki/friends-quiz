@@ -20,7 +20,7 @@ const MAX_QUESTIONS = 10;
 // Quiz questions
 
 const quiz = [{
-    characterName: "Rachel Greene",
+        characterName: "Rachel Greene",
         questions: [{
                 question: 'What plastic surgery did Rachel have in high school?',
                 choice1: 'breast',
@@ -531,13 +531,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /**
      * start the choosen character's quiz array
-     **  */ 
-   
+     **  */
+
     loadCharacters();
-    showCharacters() 
-       // startGame();
-    });
-    
+    showCharacters()
+    // startGame();
+});
+
 // Choose a friend button audio
 
 chooseButton.addEventListener('click', playMySoundtrack);
@@ -546,7 +546,7 @@ playBtn.addEventListener('click', playSoundTrack, false);
 stopBtn.addEventListener('click', stopSoundTrack, false);
 
 function playMySoundtrack() {
-  
+
     music.play();
 };
 
@@ -557,22 +557,35 @@ let stopSoundTrack = function () {
     music.pause();
 };
 
-   
+
 function loadCharacters() {
     const characters = document.getElementsByClassName("btn-character");
-   
-   for (let character of characters) {
-       console.log(character)
-       character.addEventListener("click",()=> startGame(character.textContent));
-      
-     }
-      console.log('here')
-   
-       for (let i = 0;i < 6; i++) {
-          characters[i].innerText = quiz[i].characterName;
-           // characters[i].innerText ="hello";
-           characters[i].style.display = "inline";
-       }
+
+    for (let character of characters) {
+        console.log(character)
+        character.addEventListener("click", () => startGame(character.textContent));
+
+    }
+    console.log('here')
+
+    for (let i = 0; i < 6; i++) {
+        characters[i].innerText = quiz[i].characterName;
+        // characters[i].innerText ="hello";
+        characters[i].style.display = "inline";
+    }
+}
+
+/**
+ * Flip the windows where the game meant to be at
+ * windowName = id of the window which should be visible at the moment
+ */
+function displayWindow(windowName) {
+    let windows = document.getElementsByClassName("window");
+    for (let window of windows) {
+        if (window.id === windowName) {
+            window.style.display = "block";
+        } else window.style.display = "none";
+    }
 }
 
 /**
@@ -581,20 +594,7 @@ function loadCharacters() {
 
 function showCharacters() {
     displayWindow("choosing-window");
-  }
-
-  /**
- * Flip the windows where the game meant to be at
- * windowName = id of the window which should be visible at the moment
- */
-function displayWindow(windowName) {
-    let windows = document.getElementsByClassName("window");
-    for (let window of windows) {
-      if (window.id === windowName) {
-        window.style.display = "block";
-      } else window.style.display = "none";
-    }
-  }
+}
 
 /**
  * Start the quiz
@@ -602,16 +602,26 @@ function displayWindow(windowName) {
 
 function startGame(characterName) {
     console.log(characterName)
-     // show the quiz window
+    // show the quiz window
     displayWindow("quiz-window");
-  
+
     //getting questions for the selected character 
 
-    const character = quiz.find(c => c.characterName === characterName);
+    // find() method - const character = quiz.find(c => c.characterName === characterName);
+    let character = ""
+    for (let i = 0; i < quiz.length; i++) {
+        if (quiz[i].characterName === characterName) {
+            character = quiz[i];
+            break;
+        }
+    }
 
     availableQuestions = character.questions;
 
+
     getNewQuestion();
+
+
 }
 
 /** 
@@ -622,7 +632,16 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('final-score.html');
+        //giving an encouraging message
+        let correctAnswers = document.getElementById("correct-answers").innerText
+        if (correctAnswers > 7) {
+            document.getElementById("correct-answers").innerText = "Hooray !! You are a great friend"
+        } else {
+            document.getElementById("correct-answers").innerText = "Better Luck next time"
+        }
+
+        //  return window.location.assign('final-score.html');
+        return;
     }
 
     // Shows the player which question they are at and their progess
@@ -636,9 +655,11 @@ function getNewQuestion() {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
-
+    let number = 0
     choices.forEach((choice) => {
-        const number = choice.dataset['number'];
+        number++
+
+
         choice.innerText = currentQuestion['choice' + number];
     });
 
@@ -646,33 +667,32 @@ function getNewQuestion() {
     acceptingAnswers = true;
 }
 
-choices.forEach((choice) => {
-    choice.addEventListener("click", (e) => {
-        if (!acceptingAnswers) return;
 
-        acceptingAnswers = false;
-        const selectedChoice = (e).target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+function checkAnswer(e) {
+    if (!acceptingAnswers) return;
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? "correctanswer" : "wronganswer";
+    acceptingAnswers = false;
+    const selectedChoice = (e).target;
+    const selectedAnswer = selectedChoice.dataset['number'];
 
-        if (classToApply === 'correctanswer') {
-            incrementScore(SCORE_POINTS);
-        }
+    let classToApply = selectedAnswer == currentQuestion.answer ? "correctanswer" : "wronganswer";
 
-        selectedChoice.parentElement.classList.add(classToApply);
+    if (classToApply === 'correctanswer') {
+        incrementScore(SCORE_POINTS);
+    }
 
-        /**
-         * Set Time Out to step for new question
-         * */
+    selectedChoice.parentElement.classList.add(classToApply);
 
-        const myTimeout = setTimeout(function () {
-            selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
-        }, 800); //milliseconds after the new question will appear
+    /**
+     * Set Time Out to step for new question
+     * */
 
-    });
-});
+    const myTimeout = setTimeout(function () {
+        selectedChoice.parentElement.classList.remove(classToApply);
+        getNewQuestion();
+    }, 800); //milliseconds after the new question will appear
+
+}
 
 /**
  *  Gets the current score from the DOM and increments it
@@ -680,16 +700,7 @@ choices.forEach((choice) => {
 
 function incrementScore() {
 
-	let oldScore = parseInt(document.getElementById("score").innerText);
-	document.getElementById("score").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 
 }
-
-/*
-function incrementScore(num) {
-    score += num;
-    scoreText.innerText = score;
-} */
-
-startGame();
-
