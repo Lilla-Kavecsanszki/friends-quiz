@@ -567,7 +567,6 @@ function loadCharacters() {
     for (let character of characters) {
         console.log(character)
         character.addEventListener("click", () => startGame(character.textContent));
-
     }
 
     console.log('here')
@@ -578,8 +577,9 @@ function loadCharacters() {
         characters[i].style.display = "inline";
     }
 }
+
 /**
- * Flip the windows where the game meant to be
+ * Flip the windows where the game/ the screen meant to be at the moment
  * windowName = id of the window which should be visible at the moment
  */
 function displayWindow(windowName) {
@@ -601,7 +601,6 @@ function showCharacters() {
 /**
  * Start the quiz
  * */
-
 function startGame(characterName) {
     console.log(characterName)
     // show the quiz window
@@ -611,8 +610,14 @@ function startGame(characterName) {
 
     const character = quiz.find(c => c.characterName === characterName);
 
-    availableQuestions = character.questions;
+   /* const character = ""; 
+    for (let i = 0; i < quiz.length; i++) { 
+        if (quiz[i].characterName === characterName) { 
+            character = quiz[i]; 
+            break; 
+        } } */
 
+    availableQuestions = character.questions;
 
     getNewQuestion();
 }
@@ -620,7 +625,6 @@ function startGame(characterName) {
 /** 
  * New Question 
  * */
-
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -628,9 +632,9 @@ function getNewQuestion() {
         //giving an encouraging message
         let correctAnswers = document.getElementById("correct-answers").innerText
         if (correctAnswers > 7) {
-            document.getElementById("correct-answers").innerText = "Hooray !! You are a true friend"
+            document.getElementById("correct-answers").innerText = "Hooray !! You are a true friend!"
         } else {
-            document.getElementById("correct-answers").innerText = "Better Luck next time"
+            document.getElementById("correct-answers").innerText = "Better Luck next time!"
         }
         return;
     }
@@ -658,6 +662,9 @@ function getNewQuestion() {
     acceptingAnswers = true;
 }
 
+/**
+ * Checking the correct answer 
+ */
 function checkAnswer(e) {
     if (!acceptingAnswers) return;
 
@@ -676,7 +683,6 @@ function checkAnswer(e) {
     /**
      * Set Time Out to step for new question
      * */
-
     const myTimeout = setTimeout(function () {
         selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestion();
