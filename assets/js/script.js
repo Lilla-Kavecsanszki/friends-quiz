@@ -178,7 +178,7 @@ const quiz = [{
                 answer: 1,
             },
             {
-                question: "Who did Monica and Candler meet in Connecticut?",
+                question: "Who did Monica and Chandler meet in Connecticut?",
                 choice1: "Monica's mom",
                 choice2: 'Janice',
                 choice3: 'Richard',
@@ -691,12 +691,20 @@ function checkAnswer(e) {
 /**
  *  Gets the current score from the DOM and increments it
  */
-
 function incrementScore() {
 
     let oldScore = parseInt(document.getElementById("score").innerText);
     oldScore++
     document.getElementById("score").innerText = oldScore;
     document.getElementById("correct-answers").innerText = 'Correct Answers' + oldScore;
-
 }
+
+
+/**
+ * To show the home page with the choosing window when the user wants to go back to the beginning
+ */
+let goHome = function showCharacters() {
+    displayWindow("choosing-window");
+}
+
+homebtn.addEventListener('click', showCharacters, false);
