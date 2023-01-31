@@ -558,8 +558,6 @@ function playMySoundtrack() {
     music.play();
 };
 
-
-
 // load the character names
 
 function loadCharacters() {
