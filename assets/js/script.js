@@ -11,7 +11,6 @@ const progressBarFull = document.getElementById('progressbar-full');
 
 let currentQuestion = {}
 let acceptingAnswers = true;
-let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 const SCORE_POINTS = 1;
@@ -526,7 +525,6 @@ const quiz = [{
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log('here')
     choices.forEach((choice) => {
         choice.addEventListener("click", (e) => checkAnswer(e));
     });
@@ -601,15 +599,15 @@ function showCharacters() {
  * Start the quiz
  * */
 function startGame(characterName) {
-    console.log(characterName)
+    
     // show the quiz window
     displayWindow("quiz-window");
 
     //getting questions for the selected character 
 
-    const character = quiz.find(c => c.characterName === characterName);
+   const character = quiz.find(c => c.characterName === characterName);
 
-   /* const character = ""; 
+   /* let character = ""; 
     for (let i = 0; i < quiz.length; i++) { 
         if (quiz[i].characterName === characterName) { 
             character = quiz[i]; 
@@ -626,7 +624,6 @@ function startGame(characterName) {
  * */
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score);
 
         //giving an encouraging message
         let correctAnswers = document.getElementById("score").innerText
@@ -652,7 +649,6 @@ function getNewQuestion() {
     let number = 0
     choices.forEach((choice) => {
         number++
-
 
         choice.innerText = currentQuestion['choice' + number];
     });
@@ -686,8 +682,8 @@ function checkAnswer(e) {
         selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestion();
     }, 800); //milliseconds after the new question will appear
-
 }
+
 /**
  *  Gets the current score from the DOM and increments it
  */

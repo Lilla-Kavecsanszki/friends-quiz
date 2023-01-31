@@ -218,342 +218,350 @@ h2 a:hover {
     font-weight: bold;
 }
 
-/* media
-flex-direction: column
+/* Media queries */
+
+/* screens size from 1136px wide and down */
+@media screen and (max-width: 500px) {
+
+    #girls,
+    #boys {
+        flex-direction: column 
+    }
+}
 
 /* Buttons */
 
-.btn {
-    letter-spacing: 1.2px;
-    border-radius: 50%;
-    font-size: 180%;
-    text-decoration: none;
-}
-
-.btn_instructions {
-    background-color: #8f4ec4;
-    color: #141c1e;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-.btn_instructions:active,
-.btn_instructions:hover {
-    background-color: whitesmoke;
-    color: #8f4ec4;
-    border: 3px solid #8f4ec4;
-}
-
-.btn-character {
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 3px;
-    border-radius: 20%;
-    font-size: 200%;
-    background-color: whitesmoke;
-    margin: 15px;
-}
-
-.btn--blue {
-    color: #2187B4;
-    font-weight: bold;
-}
-
-.btn--blue:active,
-.btn--blue:hover {
-    background-color: #2187B4;
-    color: whitesmoke;
-    border-color: whitesmoke;
-}
-
-.btn--red {
-    color: #ed3833;
-    font-weight: bold;
-}
-
-.btn--red:active,
-.btn--red:hover {
-    background-color: #ed3833;
-    color: whitesmoke;
-    border-color: whitesmoke;
-}
-
-.btn--green {
-    color: #48a04f;
-    font-weight: bold;
-}
-
-.btn--green:active,
-.btn--green:hover {
-    background-color: #48a04f;
-    color: whitesmoke;
-    border-color: whitesmoke;
-}
-
-/* How to Play? */
-
-#instruction-container {
-    height: 100%;
-    width: 100%;
-}
-
-#instruction-title {
-    font-size: 300%;
-    padding-top: 10%;
-    text-align: center;
-}
-
-#title {
-    font-size: 150%;
-    letter-spacing: 1px;
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-
-#rules {
-    margin-bottom: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
-    font-size: 140%;
-    letter-spacing: 1, 5px;
-}
-
-p {
-    text-align: center;
-}
-
-/* turkey */
-
-#turkey-box {
-    text-align: center;
-    padding: 2% 0;
-
-    /* animation shake effect on loading the page */
-    animation-name: shake;
-    animation-duration: 5s;
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-}
-
-/* turkey animation - https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B */
-
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
-}
-
-/* Footer */
-
-footer {
-    height: 300px;
-    width: 100%;
-    padding-bottom: 5%;
-}
-
-#copyright>p {
-    font-family: 'Quicksand', sans-serif;
-    height: 20px;
-    font-size: 80%;
-    text-align: center;
-    letter-spacing: 2px;
-    padding-bottom: 1%;
-}
-
-.social-networks {
-    height: 50px;
-    text-align: center;
-    padding-top: 15%;
-    padding-bottom: 3%;
-}
-
-.social-networks a {
-    text-decoration: none;
-}
-
-.social-networks>li {
-    display: inline;
-
-}
-
-.social-networks em {
-    font-size: 200%;
-    margin: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#linkedin em {
-    color: #44aedd;
-}
-
-#github em {
-    color: #ed3833;
-}
-
-/* Quiz pages */
-
-#main-window {
-    display: block;
-    justify-content: center;
-}
-
-.window {
-    clear: both;
-    margin: 10% 20%;
-}
-
-#question {
-    padding-top: 70px;
-}
-
-#choice-outer-box {
-    padding-top: 70px;
-}
-
-.choice-container {
-    display: flex;
-    margin-bottom: 5px;
-    width: 100%;
-    border-radius: 50px;
-    background: #141c1e;
-    font-size: 100%;
-}
-
-.choice-container:hover {
-    cursor: pointer;
-    transform: scale(1.02);
-    transform: transform 100ms;
-}
-
-.choice-prefix {
-    padding: 20px 25px;
-    color: #f8d649;
-}
-
-.choice-text {
-    padding: 20px;
-    width: 100%;
-    color: #f8d649;
-}
-
-.correctanswer {
-    background: rgb(72, 160, 79);
-}
-
-.wronganswer {
-    background: rgb(237, 56, 51);
-}
-
-#displaybar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.displaybar-prefix {
-    text-align: center;
-}
-
-.displaybar-main-text {
-    text-align: center;
-}
-
-#progressbar {
-    width: 160px;
-    height: 24px;
-    border: 3px solid #44aedd;
-    margin-top: 7%;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-#progressbar-full {
-    height: 100%;
-    background: #44aedd;
-    width: 0%;
-}
-
-/* final-score part */
-
-#final-result-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.grid {
-    display: flex;
-    justify-content: center;
-}
-
-#correct-answers {
-    font-size: 250%;
-    font-weight: bolder;
-    color: #48a04f;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-#homebtn {
-    text-decoration: none;
-    color: #8f4ec4;
-    font-size: 200%;
-    text-align: center;
-}    
-
-#homebtn i {
-    color: #8f4ec4;
-}
-
-#homebtn:active,
-#homebtn:hover {
-    cursor: pointer;
-    transform: scale(1);
-    transform: scale(1.3);
-}
-
-#homebtn i:active,
-#homebtn i:hover  {
-    cursor: pointer;
-    transform: scale(1);
-    transform: scale(1.3);
-}
+        .btn {
+            letter-spacing: 1.2px;
+            border-radius: 50%;
+            font-size: 180%;
+            text-decoration: none;
+        }
+
+        .btn_instructions {
+            background-color: #8f4ec4;
+            color: #141c1e;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        .btn_instructions:active,
+        .btn_instructions:hover {
+            background-color: whitesmoke;
+            color: #8f4ec4;
+            border: 3px solid #8f4ec4;
+        }
+
+        .btn-character {
+            font-family: 'Shadows Into Light', cursive;
+            letter-spacing: 3px;
+            border-radius: 20%;
+            font-size: 200%;
+            background-color: whitesmoke;
+            margin: 15px;
+        }
+
+        .btn--blue {
+            color: #2187B4;
+            font-weight: bold;
+        }
+
+        .btn--blue:active,
+        .btn--blue:hover {
+            background-color: #2187B4;
+            color: whitesmoke;
+            border-color: whitesmoke;
+        }
+
+        .btn--red {
+            color: #ed3833;
+            font-weight: bold;
+        }
+
+        .btn--red:active,
+        .btn--red:hover {
+            background-color: #ed3833;
+            color: whitesmoke;
+            border-color: whitesmoke;
+        }
+
+        .btn--green {
+            color: #48a04f;
+            font-weight: bold;
+        }
+
+        .btn--green:active,
+        .btn--green:hover {
+            background-color: #48a04f;
+            color: whitesmoke;
+            border-color: whitesmoke;
+        }
+
+        /* How to Play? */
+
+        #instruction-container {
+            height: 100%;
+            width: 100%;
+        }
+
+        #instruction-title {
+            font-size: 300%;
+            padding-top: 10%;
+            text-align: center;
+        }
+
+        #title {
+            font-size: 150%;
+            letter-spacing: 1px;
+            padding-top: 4%;
+            padding-bottom: 4%;
+        }
+
+        #rules {
+            margin-bottom: 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 140%;
+            letter-spacing: 1, 5px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* turkey */
+
+        #turkey-box {
+            text-align: center;
+            padding: 2% 0;
+
+            /* animation shake effect on loading the page */
+            animation-name: shake;
+            animation-duration: 5s;
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        /* turkey animation - https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B */
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        /* Footer */
+
+        footer {
+            height: 300px;
+            width: 100%;
+            padding-bottom: 5%;
+        }
+
+        #copyright>p {
+            font-family: 'Quicksand', sans-serif;
+            height: 20px;
+            font-size: 80%;
+            text-align: center;
+            letter-spacing: 2px;
+            padding-bottom: 1%;
+        }
+
+        .social-networks {
+            height: 50px;
+            text-align: center;
+            padding-top: 15%;
+            padding-bottom: 3%;
+        }
+
+        .social-networks a {
+            text-decoration: none;
+        }
+
+        .social-networks>li {
+            display: inline;
+
+        }
+
+        .social-networks em {
+            font-size: 200%;
+            margin: 1%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        #linkedin em {
+            color: #44aedd;
+        }
+
+        #github em {
+            color: #ed3833;
+        }
+
+        /* Quiz pages */
+
+        #main-window {
+            display: block;
+            justify-content: center;
+        }
+
+        .window {
+            clear: both;
+            margin: 10% 20%;
+        }
+
+        #question {
+            padding-top: 70px;
+        }
+
+        #choice-outer-box {
+            padding-top: 70px;
+        }
+
+        .choice-container {
+            display: flex;
+            margin-bottom: 5px;
+            width: 100%;
+            border-radius: 50px;
+            background: #141c1e;
+            font-size: 100%;
+        }
+
+        .choice-container:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+            transform: transform 100ms;
+        }
+
+        .choice-prefix {
+            padding: 20px 25px;
+            color: #f8d649;
+        }
+
+        .choice-text {
+            padding: 20px;
+            width: 100%;
+            color: #f8d649;
+        }
+
+        .correctanswer {
+            background: rgb(72, 160, 79);
+        }
+
+        .wronganswer {
+            background: rgb(237, 56, 51);
+        }
+
+        #displaybar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .displaybar-prefix {
+            text-align: center;
+        }
+
+        .displaybar-main-text {
+            text-align: center;
+        }
+
+        #progressbar {
+            width: 160px;
+            height: 24px;
+            border: 3px solid #44aedd;
+            margin-top: 7%;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        #progressbar-full {
+            height: 100%;
+            background: #44aedd;
+            width: 0%;
+        }
+
+        /* final-score part */
+
+        #final-result-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: center;
+        }
+
+        #correct-answers {
+            font-size: 250%;
+            font-weight: bolder;
+            color: #48a04f;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        #homebtn {
+            text-decoration: none;
+            color: #8f4ec4;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        #homebtn i {
+            color: #8f4ec4;
+        }
+
+        #homebtn:active,
+        #homebtn:hover {
+            cursor: pointer;
+            transform: scale(1);
+            transform: scale(1.3);
+        }
+
+        #homebtn i:active,
+        #homebtn i:hover {
+            cursor: pointer;
+            transform: scale(1);
+            transform: scale(1.3);
+        }
