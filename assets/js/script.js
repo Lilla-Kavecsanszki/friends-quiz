@@ -699,7 +699,6 @@ function incrementScore() {
     document.getElementById("correct-answers").innerText = 'Correct Answers' + oldScore;
 }
 
-
 /**
  * To show the home page with the choosing window when the user wants to go back to the beginning
  */

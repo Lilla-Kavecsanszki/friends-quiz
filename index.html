@@ -42,7 +42,8 @@
         </div>
     </section>
     <section id="start-area">
-        <h2><a id="choose-button" href="#characters" aria-label="Go to the Quiz"><i class="fa-solid fa-volume-high"></i> Let's start! Now pick your friend!</a></h2>
+        <h2><a id="choose-button" href="#characters" aria-label="Go to the Quiz"><i class="fa-solid fa-volume-high"></i>
+                Let's start! Now pick your friend!</a></h2>
         <audio id="myAudio">
             <source src="assets/audio/friends.mp3" type="audio/mpeg">
         </audio>
@@ -84,7 +85,8 @@
                         <p class="displaybar-prefix">Score</p>
                         <h1 class="displaybar-main-text" id="score">0</h1>
                     </div>
-                </div><!--displaybar-->
+                </div>
+                <!--displaybar-->
                 <h1 id="question">What is the answer for this question?</h1>
                 <div id="choice-outer-box">
                     <div class="choice-container">
@@ -105,38 +107,47 @@
                     </div>
                 </div>
                 <!--choice-outer-box-->
-            </div><!--quiz-->
+            </div>
+            <!--quiz-->
             <div id="final-result-area">
-                <p class="scores"><span id="correct-answers">Correct Answers 0</span></p>
-                <p class="final-text">End of the quiz!</p>
-                <a id="homebtn" href="#container">Home <i class="fa-solid fa-house"></i></a>
-            </div><!--final-result-area-->
-        </div><!--quiz-window-->
-    </div><!--main-window-->
-        <footer>
-            <div id="footer-content">
-                <ul class="social-networks">
-                    <li id="linkedin">
-                        <a href="https://www.linkedin.com/in/lilla-kavecsanszki-31888a100/" target="_blank"
-                            rel="noopener" aria-label="Visit my LinkedIn page (opens in a new tab)">
-                            <em class="fa-brands fa-linkedin"></em>
-                        </a>
-                    </li>
-                    <li id="github">
-                        <a href="https://github.com/Lilla-Kavecsanszki" target="_blank" rel="noopener"
-                            aria-label="Visit my Github page (opens in a new tab)">
-                            <em class="fa-brands fa-github"></em>
-                        </a>
-                    </li>
-                </ul>
+                <div class="grid">
+                    <p class="final-text">End of the quiz!</p>
+                </div>
+                <div>
+                    <p class="scores"><span id="correct-answers">Correct Answers: 0</span></p>
+                </div class="grid">
+                <div class="grid">
+                    <a id="homebtn" href="#container">Home <i class="fa-solid fa-house"></i></a></div>
             </div>
-            <div id="copyright">
-                <p>@ 2023 Copyright: Lilla Kavecsanszki all rights reserved</p>
-                <p>This website is for educational use.</p>
-            </div>
-        </footer>
+            <!--final-result-area-->
+        </div>
+        <!--quiz-window-->
+    </div>
+    <!--main-window-->
+    <footer>
+        <div id="footer-content">
+            <ul class="social-networks">
+                <li id="linkedin">
+                    <a href="https://www.linkedin.com/in/lilla-kavecsanszki-31888a100/" target="_blank" rel="noopener"
+                        aria-label="Visit my LinkedIn page (opens in a new tab)">
+                        <em class="fa-brands fa-linkedin"></em>
+                    </a>
+                </li>
+                <li id="github">
+                    <a href="https://github.com/Lilla-Kavecsanszki" target="_blank" rel="noopener"
+                        aria-label="Visit my Github page (opens in a new tab)">
+                        <em class="fa-brands fa-github"></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="copyright">
+            <p>@ 2023 Copyright: Lilla Kavecsanszki all rights reserved</p>
+            <p>This website is for educational use.</p>
+        </div>
+    </footer>
 
-        <script src="assets/js/script.js"> </script>
+    <script src="assets/js/script.js"> </script>
 </body>
 
 </html>

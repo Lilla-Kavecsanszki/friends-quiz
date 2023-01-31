@@ -511,21 +511,51 @@ footer {
 
 /* final-score part */
 
-#results {
-    padding-bottom: 3%;
+#final-result-area {
+    display: block;
+    justify-content: center;
 }
 
-#final-score {
-    color: #44aedd;
-    font-weight: bold;
+.grid {
+    display: block;
+    justify-content: center;
+}
+
+#correct-answers {
+    font-size: 250%;
+    font-weight: bolder;
+    color: #48a04f;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#homebtn {
+    text-decoration: none;
+    color: #8f4ec4;
     font-size: 200%;
-}
+    text-align: center;
+}    
 
-.homepagebtn i {
+#homebtn i {
     color: #8f4ec4;
 }
 
-.homepagebtn i:active,
-.homepagebtn i:hover {
-    color: whitesmoke;
+#homebtn:active,
+#homebtn:hover {
+    cursor: pointer;
+    transform: scale(1);
+    transform: scale(1.3);
+}
+
+#homebtn i:active,
+#homebtn i:hover  {
+    cursor: pointer;
+    transform: scale(1);
+    transform: scale(1.3);
+}
+
+.final-text {
+    color: #ed3833;
+    font-weight: bold;
+    font-size: 200%;
+    padding: 3%;
 }
