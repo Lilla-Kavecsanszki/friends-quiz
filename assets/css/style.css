@@ -151,7 +151,7 @@ header {
     left: 10%;
 }
 
-mediaq.  456
+/* mediaq.  456 */
 
 /* choose your character part */
 
@@ -217,6 +217,9 @@ h2 a:hover {
     color: #008000;
     font-weight: bold;
 }
+
+/* media
+flex-direction: column
 
 /* Buttons */
 
@@ -288,13 +291,14 @@ h2 a:hover {
 /* How to Play? */
 
 #instruction-container {
-    height: 600px;
+    height: 100%;
     width: 100%;
 }
 
 #instruction-title {
     font-size: 300%;
-    padding-top: 4%;
+    padding-top: 10%;
+    text-align: center;
 }
 
 #title {
@@ -510,7 +514,15 @@ footer {
 /* final-score part */
 
 #final-result-area {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.grid {
+    display: flex;
     justify-content: center;
 }
 
