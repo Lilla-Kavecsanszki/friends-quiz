@@ -525,7 +525,7 @@ const quiz = [{
     }
 ];
 
-//Load the page then start running the game
+//Load the page then start running the functions
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -566,7 +566,6 @@ function loadCharacters() {
        character.addEventListener("click",()=> startGame(character.textContent));
       
      }
-   
       console.log('here')
    
        for (let i = 0;i < 6; i++) {
@@ -583,46 +582,37 @@ function loadCharacters() {
 function showCharacters() {
     displayWindow("choosing-window");
   }
-    
-/**
- * Flip the windows where the game meant to be
+
+  /**
+ * Flip the windows where the game meant to be at
  * windowName = id of the window which should be visible at the moment
  */
 function displayWindow(windowName) {
     let windows = document.getElementsByClassName("window");
     for (let window of windows) {
-      if (window.id === windowlName) {
+      if (window.id === windowName) {
         window.style.display = "block";
       } else window.style.display = "none";
     }
   }
 
 /**
- * show the list of characters to choose from
- */
-function showCharacters() {
-    showWindow("choosing-window");
-  }
-
-/**
  * Start the quiz
  * */
 
-function startGame() {
-    questionCounter = 0;
-    let score = document.getElementById('score');
-    availableQuestions = [...questions];
+function startGame(characterName) {
+    console.log(characterName)
+     // show the quiz window
+    displayWindow("quiz-window");
+  
+    //getting questions for the selected character 
+
+    const character = quiz.find(c => c.characterName === characterName);
+
+    availableQuestions = character.questions;
+
     getNewQuestion();
-
-    // get the index of the topic to use when accessing the quiz nested array
-  let characterNumber = quiz.map(function (e) {
-    return e.characterName;
-
-    // show the quiz window
-  showWindow("quiz-window");
-  })
 }
-
 
 /** 
  * New Question 
