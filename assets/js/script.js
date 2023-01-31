@@ -3,9 +3,10 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const chooseButton = document.getElementById('choose-button');
 const playBtn = document.getElementById('play');
 const stopBtn = document.getElementById('stop');
-
+const music = document.getElementById("myAudio");
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
+const correctAnswersText = document.getElementById('correct-answers');
 const progressBarFull = document.getElementById('progressbar-full');
 
 let currentQuestion = {}
@@ -13,26 +14,8 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
-// Choose a friend button audio
-
-chooseButton.addEventListener('click', playMySoundtrack);
-
-playBtn.addEventListener('click', playSoundTrack, false);
-stopBtn.addEventListener('click', stopSoundTrack, false);
-
-function playMySoundtrack() {
-    const music = document.getElementById("myAudio");
-    music.play();
-};
-
-const music = document.getElementById("myAudio");
-let playSoundTrack = function () {
-    music.play();
-};
-let stopSoundTrack = function () {
-    music.pause();
-};
+const SCORE_POINTS = 1;
+const MAX_QUESTIONS = 10;
 
 // Quiz questions
 
@@ -542,11 +525,6 @@ const quiz = [{
     }
 ];
 
-// points for each questions and maximum quiestions
-
-const SCORE_POINTS = 1;
-const MAX_QUESTIONS = 10;
-
 //Load the page then start running the game
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -554,6 +532,11 @@ document.addEventListener("DOMContentLoaded", function () {
     /**
      * start the choosen character's quiz array
      **  */ 
+   
+    loadCharacters();
+    showCharacters() 
+       // startGame();
+    });
     
     const characters = document.getElementsByClassName("btn-character");
     
@@ -571,10 +554,25 @@ document.addEventListener("DOMContentLoaded", function () {
             characters[i].style.display = "inline";
         }
       }
-
-        startGame();
-    });
     
+// Choose a friend button audio
+
+chooseButton.addEventListener('click', playMySoundtrack);
+
+playBtn.addEventListener('click', playSoundTrack, false);
+stopBtn.addEventListener('click', stopSoundTrack, false);
+
+function playMySoundtrack() {
+    music.play();
+};
+
+let playSoundTrack = function () {
+    music.play();
+};
+let stopSoundTrack = function () {
+    music.pause();
+};
+
 /**
  * Flip the windows where the game meant to be
  * windowName = id of the window which should be visible at the moment
