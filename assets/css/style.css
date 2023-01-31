@@ -132,7 +132,8 @@ header {
 #logo-image {
     height: 600px;
     width: 100%;
-    background: url('../images/friends_logo.png') no-repeat right center;
+    background: url('../images/friends_logo.png') no-repeat right top;
+    background-size: contain;
     position: relative;
 }
 
@@ -141,19 +142,16 @@ header {
 #cover-text h1 {
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 3px;
-    font-size: 500%;
+    font-size: 7vw;
 }
 
 #cover-text {
-    text-align: center;
-    background-color: transparent;
-    width: 400px;
-    height: 100px;
-
     position: absolute;
-    top: 150px;
-    left: 150px;
+    top: 20%;
+    left: 10%;
 }
+
+mediaq.  456
 
 /* choose your character part */
 
