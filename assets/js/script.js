@@ -631,9 +631,9 @@ function getNewQuestion() {
         //giving an encouraging message
         let correctAnswers = document.getElementById("correct-answers").innerText
         if (correctAnswers > 7) {
-            document.getElementById("correct-answers").innerText = "Hooray !! You are a true friend!"
+            document.getElementById("correct-answers").innerText = "End of the quiz!\n Hooray !! You are a true friend!"
         } else {
-            document.getElementById("correct-answers").innerText = "Better Luck next time!"
+            document.getElementById("correct-answers").innerText = "End of the quiz!\n Better Luck next time!"
         }
         return;
     }
@@ -696,7 +696,7 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     oldScore++
     document.getElementById("score").innerText = oldScore;
-    document.getElementById("correct-answers").innerText = 'Correct Answers' + oldScore;
+    document.getElementById("correct-answers").innerText = 'Correct Answers:  ' + oldScore;
 }
 
 /**
