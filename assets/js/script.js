@@ -525,9 +525,11 @@ const quiz = [{
     }
 ];
 
-//Load the page then start running the functions
-
 document.addEventListener("DOMContentLoaded", function () {
+    console.log('here')
+    choices.forEach((choice) => {
+        choice.addEventListener("click", (e) => checkAnswer(e));
+    });
 
     /**
      * start the choosen character's quiz array
@@ -557,6 +559,7 @@ let stopSoundTrack = function () {
     music.pause();
 };
 
+// load the character names
 
 function loadCharacters() {
     const characters = document.getElementsByClassName("btn-character");
@@ -566,6 +569,7 @@ function loadCharacters() {
         character.addEventListener("click", () => startGame(character.textContent));
 
     }
+
     console.log('here')
 
     for (let i = 0; i < 6; i++) {
@@ -574,9 +578,8 @@ function loadCharacters() {
         characters[i].style.display = "inline";
     }
 }
-
 /**
- * Flip the windows where the game meant to be at
+ * Flip the windows where the game meant to be
  * windowName = id of the window which should be visible at the moment
  */
 function displayWindow(windowName) {
@@ -591,7 +594,6 @@ function displayWindow(windowName) {
 /**
  * show the list of characters to choose from
  */
-
 function showCharacters() {
     displayWindow("choosing-window");
 }
@@ -607,21 +609,12 @@ function startGame(characterName) {
 
     //getting questions for the selected character 
 
-    // find() method - const character = quiz.find(c => c.characterName === characterName);
-    let character = ""
-    for (let i = 0; i < quiz.length; i++) {
-        if (quiz[i].characterName === characterName) {
-            character = quiz[i];
-            break;
-        }
-    }
+    const character = quiz.find(c => c.characterName === characterName);
 
     availableQuestions = character.questions;
 
 
     getNewQuestion();
-
-
 }
 
 /** 
@@ -635,12 +628,10 @@ function getNewQuestion() {
         //giving an encouraging message
         let correctAnswers = document.getElementById("correct-answers").innerText
         if (correctAnswers > 7) {
-            document.getElementById("correct-answers").innerText = "Hooray !! You are a great friend"
+            document.getElementById("correct-answers").innerText = "Hooray !! You are a true friend"
         } else {
             document.getElementById("correct-answers").innerText = "Better Luck next time"
         }
-
-        //  return window.location.assign('final-score.html');
         return;
     }
 
@@ -667,7 +658,6 @@ function getNewQuestion() {
     acceptingAnswers = true;
 }
 
-
 function checkAnswer(e) {
     if (!acceptingAnswers) return;
 
@@ -693,7 +683,6 @@ function checkAnswer(e) {
     }, 800); //milliseconds after the new question will appear
 
 }
-
 /**
  *  Gets the current score from the DOM and increments it
  */
@@ -701,6 +690,8 @@ function checkAnswer(e) {
 function incrementScore() {
 
     let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+    oldScore++
+    document.getElementById("score").innerText = oldScore;
+    document.getElementById("correct-answers").innerText = 'Correct Answers' + oldScore;
 
 }
