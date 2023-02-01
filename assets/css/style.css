@@ -254,6 +254,7 @@ h2 a:hover {
     background-color: #2187B4;
     color: whitesmoke;
     border-color: whitesmoke;
+    cursor: pointer;
 }
 
 .btn--red {
@@ -266,6 +267,7 @@ h2 a:hover {
     background-color: #ed3833;
     color: whitesmoke;
     border-color: whitesmoke;
+    cursor: pointer;
 }
 
 .btn--green {
@@ -278,6 +280,7 @@ h2 a:hover {
     background-color: #48a04f;
     color: whitesmoke;
     border-color: whitesmoke;
+    cursor: pointer;
 }
 
 /* How to Play? */
