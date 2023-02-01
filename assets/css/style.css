@@ -127,7 +127,6 @@ header {
 
 #container {
     width: 100%;
-    height: 600px;
 }
 
 #logo-image {
@@ -286,7 +285,6 @@ h2 a:hover {
 /* How to Play? */
 
 #instruction-container {
-    height: 100%;
     width: 100%;
 }
 
@@ -556,8 +554,8 @@ footer {
 
 /* Media queries */
 
-/* screens size from 500px wide and down */
-@media screen and (max-width: 500px) {
+/* screens size from 700px wide and down */
+@media screen and (max-width: 700px) {
 
     #girls,
     #boys {
@@ -565,8 +563,8 @@ footer {
     }
 
     #cover-text {
-        top: 12%;
-        left: 10%;
+        top: 40%;
+        left: 15%;
     }
 
     #instruction-title {
@@ -581,14 +579,14 @@ footer {
 
 /* screens size from 985px wide and down */
 @media screen and (max-width: 985px) {
-#container {
-    margin-bottom: -5% ;
+    #logo-image {
+        height: 400px;
 }}
 
 /* screens size from 750px wide and down */
 @media screen and (max-width: 750px) {
-    #container {
-        margin-bottom: -10% ;
+    #logo-image {
+        height: 350px;
     }
     h2 {
         font-size: 200%;
@@ -596,8 +594,8 @@ footer {
 
 /* screens size from 670px wide and down */
 @media screen and (max-width: 670px) {
-    #container {
-        margin-bottom: -30% ;
+    #logo-image {
+        height: 300px;
     }
     h2 {
         font-size: 150%;
@@ -609,24 +607,24 @@ footer {
 
     /* screens size from 570px wide and down */
 @media screen and (max-width: 570px) {
-    #container {
-        margin-bottom: -40% ;
+    #logo-image {
+        height: 260px;
     }}
 
         /* screens size from 470px wide and down */
 @media screen and (max-width: 470px) {
-    #container {
-        margin-bottom: -60% ;
+    #logo-image {
+        height: 240px;
     }}
 
        /* screens size from 420px wide and down */
 @media screen and (max-width: 420px) {
-    #container {
-        margin-bottom: -90% ;
+    #logo-image {
+        height: 200px;
     }}
 
           /* screens size from 350px wide and down */
 @media screen and (max-width: 350px) {
-    #container {
-        margin-bottom: -110% ;
+    #logo-image {
+        height: 200px;
     }}
