@@ -57,6 +57,8 @@ The customer goals of this website are:
 # User Experience (UX)
 
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 ### Ideal client
 
 
@@ -87,6 +89,8 @@ This website:
 -   Has social media site buttons in the footer, which open them up in new tabs in order to not distract the customers  
     away from the website but a great help for the designer to showcase her other projects and work.  
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 ### User stories
 
 1.	As a viewer of the website, I want to easily navigate the site, so I can find what I need (most importantly, the 
@@ -94,13 +98,15 @@ This website:
 2.	As a viewer of the website, I want to understand what the game is about.
 4.  As a viewer of the website, I want to be able to see my final result and progression before thats.
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 # Wireframes
 
 Home page
 
 ![Home page wireframe](readme-images/wireframe_homepage.png "Home page wireframe")
 
-
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Accessibility
 
@@ -112,6 +118,8 @@ Lighthouse testing for desktop and mobile has scored 100% for accessibility on b
 ![Lighthouse Accessibility](readme-images/accessibility_lighthouse_mobile%26desktop.png "Lighthouse Accessibility")
 
 I used [A11y](https://color.a11y.com) the Color Contrast Accessibility Validator which determined that no colour contrast issues were found on any of the pages.
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Design
 
@@ -130,6 +138,8 @@ I used [A11y](https://color.a11y.com) the Color Contrast Accessibility Validator
 [My Colour Palette](https://colorkit.co/palette/f5f5f5-f8d649-48a04f-44aedd-8f4ec4-ed3833-141c1e/)
 
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 ### Typography
 
 I used [Google Fonts](https://fonts.google.com/) to import the following fonts to the site.
@@ -146,9 +156,13 @@ I also chose a third font for the footer text, Quicksand, as I wanted to impleme
 
 ![Quicksand Font](readme-images/Quicksand-font.png "Quicksand Font")
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 # Languages Used
 
 HTML, CSS and Javascript were used to complete this project.
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Technologies Used
 
@@ -159,18 +173,22 @@ HTML, CSS and Javascript were used to complete this project.
 - Google Chrome Developer Tools was used for debugging and testing with Lighthouse
 - [Google Fonts](https://fonts.google.com/) was used to import both fonts for use on the site
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 # Features
 
 
 
-
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 #### Home
 
-
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 #### How to Play? 
 
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Deployment
 
@@ -184,15 +202,23 @@ The On The Sunny Side website is deployed using Github Pages, this was done by:
 main, and the folder option to /root
 6.	Click save, wait a few minutes and On The Sunny Side website is now deployed at the URL displayed
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 # Local Deployment
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## How to Clone
 
 Locate the main page of Friends-Quiz repository, click the Code button to the left of the green Gitpod button, then choose Local. Copy the URL of the repository, you can click on headings for HTTPS, SSH, and Github CLI to find their individual links. Open your own terminal in your editor and change the current working directory to the location of where you want the cloned directory to be. In the terminal type git clone, and then paste the URL you copied from Friends-Quiz repository page. Press enter to complete.
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 ## How to Fork
 
 Locate the main page of Friends-Quiz repository. Click the fork button in the top right of the screen, between the watch, and the star buttons.
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Testing
 
@@ -205,31 +231,40 @@ W3C HTML Validator result on the Home page
 
 W3
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## Manual Testing
 
 
-
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## User Stories Testing 
 
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## Further testing
 
 I asked friends and family to look at the site on their devices and report any issues they find. Position of the text in cover-text was adjusted as a result of this on the Home page. They also reported that the dropdown menu doesn't work in an efficient way when viewed on mobile screens with Safari browser. Instead of a simple tap, they have to press the button for a longer period of time in order to drop down. In every other case, it worked perfectly, on Safari desktop screen size including.
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 ## Bugs
 
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Credits
 
 
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## Content
 
 The text for the 'How to Play?' page and the content for the quiz games were a creative work of Georgina Kavecsanszki. 
+
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## Media
 
@@ -248,6 +283,8 @@ https://www.shutterstock.com/image-vector/yellow-vintage-frame-peephole-on-white
 
 https://seeklogo.com/free-vector-logos/friends
 
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## Acknowledgments and Code
 
@@ -270,6 +307,11 @@ https://stackoverflow.com/questions/51572489/playing-sound-on-click-event-with-p
 
 https://stackoverflow.com/questions/29370017/adding-a-high-score-to-local-storage
 
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
 ## Disclaimer
 
 This website is for educational use only.
+
+[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
