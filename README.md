@@ -7,7 +7,7 @@ Of course the game is designed to be easily used on any device and so to be incl
 [Link to my website](https://lilla-kavecsanszki.github.io/friends-quiz/)
 
 
-![Am I Responsive?](readme-images/responsive.png "Am I Responsive?")
+![Am I Responsive?](readme-images/Responsiveness.png "Am I Responsive?")
 
 [I Am Responsive](https://ui.dev/amiresponsive?url=https://lilla-kavecsanszki.github.io/friends-quiz/)
 
