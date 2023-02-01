@@ -505,7 +505,7 @@ footer {
 
 /* final-score part */
 
-#final-result-area {
+#final-results-window {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -585,13 +585,20 @@ footer {
 @media screen and (max-width: 750px) {
     #container {
         margin-bottom: -10% ;
+    }
+    h2 {
+        font-size: 200%;
     }}
 
 /* screens size from 670px wide and down */
 @media screen and (max-width: 670px) {
     #container {
         margin-bottom: -30% ;
-    }}
+    }
+    h2 {
+        font-size: 150%;
+    }
+}
 
     /* screens size from 570px wide and down */
 @media screen and (max-width: 570px) {
@@ -605,8 +612,8 @@ footer {
         margin-bottom: -60% ;
     }}
 
-       /* screens size from 400px wide and down */
-@media screen and (max-width: 400px) {
+       /* screens size from 420px wide and down */
+@media screen and (max-width: 420px) {
     #container {
         margin-bottom: -90% ;
     }}

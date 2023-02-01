@@ -566,11 +566,8 @@ function loadCharacters() {
         character.addEventListener("click", () => startGame(character.textContent));
     }
 
-    console.log('here')
-
     for (let i = 0; i < 6; i++) {
         characters[i].innerText = quiz[i].characterName;
-        // characters[i].innerText ="hello";
         characters[i].style.display = "inline";
     }
 }
@@ -595,6 +592,10 @@ function showCharacters() {
     displayWindow("choosing-window");
 }
 
+function showResults() {
+    displayWindow("final-results-window")
+}
+
 /**
  * Start the quiz
  * */
@@ -605,14 +606,14 @@ function startGame(characterName) {
 
     //getting questions for the selected character 
 
-   const character = quiz.find(c => c.characterName === characterName);
+   // const character = quiz.find(c => c.characterName === characterName);
 
-   /* let character = ""; 
+   let character = ""; 
     for (let i = 0; i < quiz.length; i++) { 
         if (quiz[i].characterName === characterName) { 
             character = quiz[i]; 
             break; 
-        } } */
+        } } 
 
     availableQuestions = character.questions;
 
@@ -625,6 +626,8 @@ function startGame(characterName) {
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
 
+            displayWindow("final-results-window");
+    
         //giving an encouraging message
         let correctAnswers = document.getElementById("score").innerText
         if (correctAnswers > 7) {
