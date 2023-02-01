@@ -600,20 +600,21 @@ function showResults() {
  * Start the quiz
  * */
 function startGame(characterName) {
-    
+
     // show the quiz window
     displayWindow("quiz-window");
 
     //getting questions for the selected character 
 
-   // const character = quiz.find(c => c.characterName === characterName);
+    // const character = quiz.find(c => c.characterName === characterName);
 
-   let character = ""; 
-    for (let i = 0; i < quiz.length; i++) { 
-        if (quiz[i].characterName === characterName) { 
-            character = quiz[i]; 
-            break; 
-        } } 
+    let character = "";
+    for (let i = 0; i < quiz.length; i++) {
+        if (quiz[i].characterName === characterName) {
+            character = quiz[i];
+            break;
+        }
+    }
 
     availableQuestions = character.questions;
 
@@ -625,9 +626,9 @@ function startGame(characterName) {
  * */
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        questionCounter = 0;
+        displayWindow("final-results-window");
 
-            displayWindow("final-results-window");
-    
         //giving an encouraging message
         let correctAnswers = document.getElementById("score").innerText
         if (correctAnswers > 7) {
@@ -636,7 +637,8 @@ function getNewQuestion() {
             document.getElementById("correct-answers").innerText = "End of the quiz!\n Not bad!"
         } else {
             document.getElementById("correct-answers").innerText = "End of the quiz!\n Better Luck next time!"
-        } return;
+        }
+        return;
     }
 
     // Shows the player which question they are at and their progess
