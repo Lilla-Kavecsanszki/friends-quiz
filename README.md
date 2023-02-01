@@ -288,24 +288,27 @@ https://seeklogo.com/free-vector-logos/friends
 
 ## Acknowledgments and Code
 
-turkey animation - https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B
+turkey animation 
+https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B
 
-hamburger menu - https://codepen.io/andreykrokhin/pen/mGEqja
+hamburger menu
+https://codepen.io/andreykrokhin/pen/mGEqja
 
-
-How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial
+The quiz
 https://www.youtube.com/watch?v=f4fB9Xg2JEY
-
-Flipping panels (windows)
-https://www.w3schools.com/jsref/prop_style_display.asp
 
 https://www.sitepoint.com/simple-javascript-quiz/
 
 https://www.w3schools.com/jsref/met_win_settimeout.asp
 
+Flipping panels (windows)
+https://www.w3schools.com/jsref/prop_style_display.asp
+
+Using buttons and audio
 https://stackoverflow.com/questions/51572489/playing-sound-on-click-event-with-pure-javascript
 
-https://stackoverflow.com/questions/29370017/adding-a-high-score-to-local-storage
+How to add table of content to README file
+https://www.setcorrect.com/portfolio/work11/#:~:text=The%20idea%20was%20to%20use%20Markdown%20bulleted%20lists,bulleted%20%28unordered%29%20list%20in%20Markdown%3A%20%2A%20List%20item
 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)

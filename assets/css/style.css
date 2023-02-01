@@ -127,6 +127,7 @@ header {
 
 #container {
     width: 100%;
+    height: 600px;
 }
 
 #logo-image {
@@ -551,7 +552,7 @@ footer {
 
 /* Media queries */
 
-/* screens size from 1136px wide and down */
+/* screens size from 500px wide and down */
 @media screen and (max-width: 500px) {
 
     #girls,
@@ -573,3 +574,45 @@ footer {
         padding-bottom: 5%;
 
 }}
+
+/* screens size from 985px wide and down */
+@media screen and (max-width: 985px) {
+#container {
+    margin-bottom: -5% ;
+}}
+
+/* screens size from 750px wide and down */
+@media screen and (max-width: 750px) {
+    #container {
+        margin-bottom: -10% ;
+    }}
+
+/* screens size from 670px wide and down */
+@media screen and (max-width: 670px) {
+    #container {
+        margin-bottom: -30% ;
+    }}
+
+    /* screens size from 570px wide and down */
+@media screen and (max-width: 570px) {
+    #container {
+        margin-bottom: -40% ;
+    }}
+
+        /* screens size from 470px wide and down */
+@media screen and (max-width: 470px) {
+    #container {
+        margin-bottom: -60% ;
+    }}
+
+       /* screens size from 400px wide and down */
+@media screen and (max-width: 400px) {
+    #container {
+        margin-bottom: -90% ;
+    }}
+
+          /* screens size from 350px wide and down */
+@media screen and (max-width: 350px) {
+    #container {
+        margin-bottom: -110% ;
+    }}
