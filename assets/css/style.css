@@ -510,16 +510,17 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    
 }
 
 .grid {
     display: flex;
     justify-content: center;
+    padding-bottom: 5%;
 }
 
 #correct-answers {
-    font-size: 250%;
+    font-size: 350%;
     font-weight: bolder;
     color: #48a04f;
     font-family: 'Shadows Into Light', cursive;
@@ -598,6 +599,9 @@ footer {
     h2 {
         font-size: 150%;
     }
+    #correct-answers {
+        font-size: 200%;
+}
 }
 
     /* screens size from 570px wide and down */

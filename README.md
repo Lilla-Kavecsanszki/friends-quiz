@@ -56,9 +56,6 @@ The customer goals of this website are:
 
 # User Experience (UX)
 
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
-
 ### Ideal client
 
 
@@ -177,10 +174,6 @@ HTML, CSS and Javascript were used to complete this project.
 
 # Features
 
-
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
-
 #### Home
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
@@ -278,15 +271,9 @@ The soundtrack audio that is used on the website was obtained from;
 https://archive.org/details/tvtunes_31736
 
 
-
-https://www.shutterstock.com/image-vector/yellow-vintage-frame-peephole-on-white-2215146543
-
-https://seeklogo.com/free-vector-logos/friends
-
-
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
-## Acknowledgments and Code
+## Code
 
 turkey animation 
 https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B
@@ -312,6 +299,12 @@ https://www.setcorrect.com/portfolio/work11/#:~:text=The%20idea%20was%20to%20use
 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+
+## Acknowledgments
+
+I received inspiration for this project from my sister's and friends' as well as my own obsessions with the sitcom and I have also checked out works of other students for scope and what's best practice for a Mile stone project 2. 
+
+I also would like to say a big thank you to my mentor Elaine Roche who guided me through this project and gave me the idea of flipping windows and the nested array to keep the file numbers to the minimum after I arrived with roughly 15 files to our second session, as well as some UX tips!
 
 ## Disclaimer
 

@@ -632,10 +632,11 @@ function getNewQuestion() {
         let correctAnswers = document.getElementById("score").innerText
         if (correctAnswers > 7) {
             document.getElementById("correct-answers").innerText = "End of the quiz!\n Hooray !! You are a true friend!"
+        } else if (correctAnswers > 4) {
+            document.getElementById("correct-answers").innerText = "End of the quiz!\n Not bad!"
         } else {
             document.getElementById("correct-answers").innerText = "End of the quiz!\n Better Luck next time!"
-        }
-        return;
+        } return;
     }
 
     // Shows the player which question they are at and their progess
