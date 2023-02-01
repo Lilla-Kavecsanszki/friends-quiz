@@ -23,6 +23,37 @@ The customer goals of this website are:
 -   A website where they can find a character based game, to be able to choose a selected quiz based on their 
     favourite character or have a different one for each friend. Not just a generalised Friends quiz like, on other websites. 
 
+# Contents
+
+- [User Experience (UX)](https://github.com/Lilla-Kavecsanszki/friends-quiz#user-experience-ux)
+- [Ideal client](https://github.com/Lilla-Kavecsanszki/friends-quiz#ideal-client)
+- [User stories](https://)
+- [Wireframes](https://github.com/Lilla-Kavecsanszki/friends-quiz#wireframes)
+- [Accessibility](https://github.com/Lilla-Kavecsanszki/friends-quiz#accessibility)
+- [Design](https://github.com/Lilla-Kavecsanszki/friends-quiz#design)
+  - [Colour Scheme](https://github.com/Lilla-Kavecsanszki/friends-quiz#colour-scheme)
+  - [Typography](https://github.com/Lilla-Kavecsanszki/friends-quiz#typography)
+- [Languages Used](https://github.com/Lilla-Kavecsanszki/friends-quiz#languages-used)
+- [Technologies Used](https://github.com/Lilla-Kavecsanszki/friends-quiz#technologies-used)
+- [Features](https://github.com/Lilla-Kavecsanszki/friends-quiz#features)
+  - [Home](https://github.com/Lilla-Kavecsanszki/friends-quiz#home)
+  - [How to Play?](https://github.com/Lilla-Kavecsanszki/friends-quiz#how-to-play)
+- [Deployment](https://github.com/Lilla-Kavecsanszki/friends-quiz#deployment)
+- [Local Deployment](https://github.com/Lilla-Kavecsanszki/friends-quiz#local-deployment)
+  - [How to Clone](https://github.com/Lilla-Kavecsanszki/friends-quiz#how-to-clone)
+  - [How to Fork](https://github.com/Lilla-Kavecsanszki/friends-quiz#how-to-fork)
+- [Testing](https://github.com/Lilla-Kavecsanszki/friends-quiz#testing)
+  - [Manual Testing](https://github.com/Lilla-Kavecsanszki/friends-quiz#manual-testing)
+  - [User Stories Testing](https://github.com/Lilla-Kavecsanszki/friends-quiz#user-stories-testing)
+  - [Further Testing](https://github.com/Lilla-Kavecsanszki/friends-quiz#further-testing)
+  - [Bugs](https://github.com/Lilla-Kavecsanszki/friends-quiz#bugs)
+- [Credits](https://github.com/Lilla-Kavecsanszki/friends-quiz#credits)
+  - [Content](https://github.com/Lilla-Kavecsanszki/friends-quiz#content)
+  - [Media](https://github.com/Lilla-Kavecsanszki/friends-quiz#media)
+  - [Acknowledgments and Code](https://github.com/Lilla-Kavecsanszki/friends-quiz#acknowledgments-and-code)
+  - [Disclaimer](https://github.com/Lilla-Kavecsanszki/friends-quiz#disclaimer)
+
+
 # User Experience (UX)
 
 
@@ -56,7 +87,7 @@ This website:
 -   Has social media site buttons in the footer, which open them up in new tabs in order to not distract the customers  
     away from the website but a great help for the designer to showcase her other projects and work.  
 
-User stories
+### User stories
 
 1.	As a viewer of the website, I want to easily navigate the site, so I can find what I need (most importantly, the 
     quiz efficiently.
