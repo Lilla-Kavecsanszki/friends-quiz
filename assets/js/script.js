@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const progressText = document.getElementById('progress-text');
     const scoreText = document.getElementById('score');
     const correctAnswersText = document.getElementById('correct-answers');
+    const result = document.getElementById('result');
     const progressBarFull = document.getElementById('progressbar-full');
     
     let currentQuestion = {}
@@ -599,7 +600,9 @@ function showResults() {
  * Start the quiz
  * */
 function startGame(characterName) {
-
+if (questionCounter > 0) {
+    (questionCounter = 0)
+}
     // show the quiz window
     displayWindow("quiz-window");
 
@@ -625,6 +628,10 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         questionCounter = 0;
         displayWindow("final-results-window");
+        
+//giving final score
+let result = document.getElementById("result").innerText
+
 
         //giving an encouraging message
         let correctAnswers = document.getElementById("score").innerText
@@ -695,7 +702,7 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     oldScore++
     document.getElementById("score").innerText = oldScore;
-    document.getElementById("correct-answers").innerText = 'Correct Answers:  ' + oldScore;
+    document.getElementById("result").innerText = 'Correct Answers:' + oldScore;
 }
 
 /**

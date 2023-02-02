@@ -221,9 +221,22 @@ Under the progress bar and the score counter there is the quiz itself, displayin
 
 ![Quiz](readme-images/quiz.png "Quiz")
 
+When the user finishes with all 10 questions the third 'window', the final-results-window, becomes visible, and the other two invisible.
+
+![Final result window](readme-images/final-results-window.png "Final result window")
+
+First a text makes it understandable that the quiez has ended, then the relevant message gets displayed too. This message is based on the achieved points by the user. 
+
+![Final result](readme-images/final-result.png "Final result")
+
+And lastly a home button that is the same violet colour as the hamburger menu, suggesting that it is for navigation, as well. The user can navigate back to the first window to choose a character again, and restart if wishes to. 
+
+![Home button](readme-images/home-button.png "Home button")
 
 
 #### How to Play? 
+
+
 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
