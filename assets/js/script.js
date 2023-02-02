@@ -628,10 +628,6 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         questionCounter = 0;
         displayWindow("final-results-window");
-        
-//giving final score
-let result = document.getElementById("result").innerText
-
 
         //giving an encouraging message
         let correctAnswers = document.getElementById("score").innerText
@@ -702,7 +698,7 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     oldScore++
     document.getElementById("score").innerText = oldScore;
-    document.getElementById("result").innerText = 'Correct Answers:' + oldScore;
+    document.getElementById("result").innerText = 'Correct Answers:  ' + oldScore;
 }
 
 /**

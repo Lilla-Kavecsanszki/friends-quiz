@@ -520,6 +520,13 @@ footer {
     padding-bottom: 5%;
 }
 
+#result {
+    font-size: 300%;
+    font-weight: bolder;
+    color: #44aedd;
+    font-family: 'Shadows Into Light', cursive;
+}
+
 #correct-answers {
     font-size: 350%;
     font-weight: bolder;

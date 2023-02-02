@@ -225,9 +225,13 @@ When the user finishes with all 10 questions the third 'window', the final-resul
 
 ![Final result window](readme-images/final-results-window.png "Final result window")
 
-First a text makes it understandable that the quiez has ended, then the relevant message gets displayed too. This message is based on the achieved points by the user. 
+First the final point count gets displayed
 
 ![Final result](readme-images/final-result.png "Final result")
+
+Then a text also makes it understandable that the quiez has ended, then the relevant message gets displayed too. This message is based on the achieved points by the user. 
+
+![Feedback](readme-images/message.png "Feedback")
 
 And lastly a home button that is the same violet colour as the hamburger menu, suggesting that it is for navigation, as well. The user can navigate back to the first window to choose a character again, and restart if wishes to. 
 
