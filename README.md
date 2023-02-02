@@ -236,7 +236,17 @@ And lastly a home button that is the same violet colour as the hamburger menu, s
 
 #### How to Play? 
 
+On the top the title is displayed, confirming that the user is on the correct page. 
 
+![Title](readme-images/how-to-play.png "Title")
+
+Underneath there is an encouraging paragraph then the explanation of website, what it is about with the instructions along some references from the series.
+
+![Instructions](readme-images/instructions.png "Instructions")
+
+Under the instructions section there is an animated Thanksgiving turkey with sunglasses. This is a funny reference from the series to set the mood for the webpage.
+
+![Turkey](readme-images/turkey.png "Turkey")
 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
