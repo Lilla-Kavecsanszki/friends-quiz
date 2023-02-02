@@ -179,9 +179,49 @@ HTML, CSS and Javascript were used to complete this project.
 
 The Friends Quiz website includes 2 pages; Home and the instruction page; 'How to play?'. All the pages are accessible through the hamburger menu shown at the top of the screen at all times. At the end of each game there is an extra 'Home' button to return to the Home page and so the user can choose a character again if they wish to start a new game. 
 
+The pages include:
+A navigation hamburger bar that allows the customers to navigate to each of the main pages of the site. The hamburger menu is fixed so it will follow the customer scrolling down the pages, giving them easier access to navigate again. Upon hovering over each of the hamburger menu links they'll also be changing their backgrounds to show the viewer where they are clicking. 
+
+![Hamburger Menu](readme-images/hamburger-bar.png "Hamburger Menu")
+
+![Open Hamburger Menu](readme-images/hamburger-bar-open.png "Open Hamburger Menu")
+
+A footer is displayed at the bottom of each page which displays the contact information of the web developer, Copyright information with a disclaimer and links to LinkedIn and Github for the viewers to be able to get in contact with the developer.
+
+![Footer](readme-images/footer.png "Footer")
+
 #### Home
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
+The Home page features a logo image, that instantly makes the theme of the website understandable to the user. It has the header - a navigation hamburger menu displayed as a fixed feature. The logo image also has a cover text on it with a text that explains the purpose of the website straight away. The purpose of these elements is to give a great first impression on arriving at the website, with the straight forward suggestion to the purpose itself.  
+
+![Logo](readme-images/top-part.png "Logo")
+
+After the log/hero image, there is an encouraging text that is a button at the same time, taking the user to the section where they can start the game. When this link is clicked, the soundtrack of the sitcom starts, giving extra dynamics to the page. The text starts with a common speaker icon to make sure that the user understands that it will be noisy, in case they are at a place where that would be inappropriate or simply doesn't want to listen any audio at the moment. There are also 2 buttons to control the audio underneath. In case the user doesn't want to listen the music, they can stop it straight away, or also restart it. The buttons are edited font icons, featuring the common 'play' and 'stop' signs for the sake of common understanding of what those buttons are for. The also zoom out and change colours when the user hover over them to see which button is clicked.   
+
+![Navigation and audio buttons](readme-images/audio-part.png "Navigation and audio buttons")
+
+After this section there are 6 buttons with the name of each characters on them. When the user clicks on them, the buttons will take them onto the next 'window' of the page, which is a personalized quiz based on the choosen character.
+
+![Character choosing buttons](readme-images/character-buttons.png "Character choosing buttons")
+
+After clicking on the buttons the second 'window' will be displayed and the first one with the audio buttons and the character choosing buttons will be invisible. (There is a third 'window' too, that one is also invisible at this stage.)
+With that the quiz starts, with 10 questions and 4 multiple choice answers designed for the 6 characters each.
+
+![Quiz window](readme-images/quiz-window.png "Quiz window")
+
+This window also features a progress bar on the top left corner with blue color. With this the user can keep track which question they are at out of 10 and so their progess.
+
+![Progress bar](readme-images/progressbar.png "Progress bar")
+
+On the same line with the progress bar, on the top right corner there is a score counter with green color. The user can keep track of their scores, or correct answers.
+
+![Score display](readme-images/score-display.png "Score display")
+
+Under the progress bar and the score counter there is the quiz itself, displaying 10 different questions and 4 multiple choice answer to each questions, respectively to the 6 characters also. The questions come up in a random order, so each round feels a little bit different.
+
+![Quiz](readme-images/quiz.png "Quiz")
+
+
 
 #### How to Play? 
 
