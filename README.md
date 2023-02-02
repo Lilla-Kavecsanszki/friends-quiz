@@ -27,7 +27,7 @@ The customer goals of this website are:
 
 - [User Experience (UX)](https://github.com/Lilla-Kavecsanszki/friends-quiz#user-experience-ux)
 - [Ideal client](https://github.com/Lilla-Kavecsanszki/friends-quiz#ideal-client)
-- [User stories](https://)
+- [User stories](https://github.com/Lilla-Kavecsanszki/friends-quiz#user-stories)
 - [Wireframes](https://github.com/Lilla-Kavecsanszki/friends-quiz#wireframes)
 - [Accessibility](https://github.com/Lilla-Kavecsanszki/friends-quiz#accessibility)
 - [Design](https://github.com/Lilla-Kavecsanszki/friends-quiz#design)
@@ -84,7 +84,7 @@ This website:
     or wishes.
 -   Guides them and their curiosity to the goal of the website
 -   Has social media site buttons in the footer, which open them up in new tabs in order to not distract the customers  
-    away from the website but a great help for the designer to showcase her other projects and work.  
+    away from the website but a great help for the developer to showcase her other projects and work.  
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
@@ -92,8 +92,10 @@ This website:
 
 1.	As a viewer of the website, I want to easily navigate the site, so I can find what I need (most importantly, the 
     quiz efficiently.
-2.	As a viewer of the website, I want to understand what the game is about.
-4.  As a viewer of the website, I want to be able to see my final result and progression before thats.
+2.	As a potential new visitor of the website, I want to understand what the game is about and its rules.
+3.  As a viewer of the website, I want to be able to see my final result and progression in the meantime.
+4.  As an interested observer and/or hiring manager, I want to be able to find the web developer and see other projects 
+    from her on social media and industry relevant sites
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
@@ -169,10 +171,13 @@ HTML, CSS and Javascript were used to complete this project.
 - Gitpod was used to create and edit all original code
 - Google Chrome Developer Tools was used for debugging and testing with Lighthouse
 - [Google Fonts](https://fonts.google.com/) was used to import both fonts for use on the site
+- [Favicon Generator](https://favicon.io/favicon-generator/) was used to create personalised favicon for the site
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Features
+
+The Friends Quiz website includes 2 pages; Home and the instruction page; 'How to play?'. All the pages are accessible through the hamburger menu shown at the top of the screen at all times. At the end of each game there is an extra 'Home' button to return to the Home page and so the user can choose a character again if they wish to start a new game. 
 
 #### Home
 
@@ -282,7 +287,13 @@ hamburger menu
 https://codepen.io/andreykrokhin/pen/mGEqja
 
 The quiz
+The below YouTube video and websites have been used to understand the logic of building a quiz with Javascript. They were also the primary source of encouragement to start off this project.
+
 https://www.youtube.com/watch?v=f4fB9Xg2JEY
+
+https://www.howtogeek.com/devops/using-arrow-functions-in-javascript/#:~:text=An%20arrow%20function%20in%20JavaScript%20is%20a%20terser,Arrow%20functions%20were%20added%20with%20ES6%20in%202015.
+
+https://www.w3schools.com/jsref/jsref_forEach.asp
 
 https://www.sitepoint.com/simple-javascript-quiz/
 

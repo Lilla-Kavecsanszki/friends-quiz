@@ -556,13 +556,12 @@ function playMySoundtrack() {
     music.play();
 };
 
-// load the character names
+// load the character names 
 
 function loadCharacters() {
     const characters = document.getElementsByClassName("btn-character");
 
     for (let character of characters) {
-        console.log(character)
         character.addEventListener("click", () => startGame(character.textContent));
     }
 
@@ -605,8 +604,6 @@ function startGame(characterName) {
     displayWindow("quiz-window");
 
     //getting questions for the selected character 
-
-    // const character = quiz.find(c => c.characterName === characterName);
 
     let character = "";
     for (let i = 0; i < quiz.length; i++) {
