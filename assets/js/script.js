@@ -618,29 +618,14 @@ if (questionCounter > 0) {
 
     availableQuestions = character.questions;
 
-    getNewQuestion();
+    nextStep();
 }
 
 /** 
  * New Question 
  * */
 function getNewQuestion() {
-    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        questionCounter = 0;
-        displayWindow("final-results-window");
-
-        //giving an encouraging message
-        let correctAnswers = document.getElementById("score").innerText
-        if (correctAnswers > 7) {
-            document.getElementById("correct-answers").innerText = "End of the quiz!\n Hooray !! You are a true friend!"
-        } else if (correctAnswers > 4) {
-            document.getElementById("correct-answers").innerText = "End of the quiz!\n Not bad!"
-        } else {
-            document.getElementById("correct-answers").innerText = "End of the quiz!\n Better Luck next time!"
-        }
-        return;
-    }
-
+    
     // Shows the player which question they are at and their progess
 
     questionCounter++;
@@ -666,6 +651,35 @@ function getNewQuestion() {
 /**
  * Checking the correct answer 
  */
+
+function endGame(){
+    questionCounter = 0;
+    displayWindow("final-results-window");
+    
+    //giving final score
+    let result = document.getElementById("result").innerText
+
+    //giving an encouraging message
+    let correctAnswers = document.getElementById("score").innerText
+    if (correctAnswers > 7) {
+        document.getElementById("correct-answers").innerText = "End of the quiz!\n Hooray !! You are a true friend!"
+    } else if (correctAnswers > 4) {
+        document.getElementById("correct-answers").innerText = "End of the quiz!\n Not bad!"
+    } else {
+        document.getElementById("correct-answers").innerText = "End of the quiz!\n Better Luck next time!"
+    }
+    return;
+}
+
+function nextStep(){
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+       endGame()
+   }
+
+   else{
+       getNewQuestion()
+   }
+
 function checkAnswer(e) {
     if (!acceptingAnswers) return;
 
@@ -709,5 +723,6 @@ let goHome = function showCharacters() {
 }
 
 homebtn.addEventListener('click', showCharacters, false);
-});
+};
 
+});
