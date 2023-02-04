@@ -600,9 +600,7 @@ function showResults() {
  * Start the quiz
  * */
 function startGame(characterName) {
-if (questionCounter > 0) {
-    (questionCounter = 0)
-}
+
     // show the quiz window
     displayWindow("quiz-window");
 
@@ -676,7 +674,7 @@ function nextStep(){
        endGame()
    }
 
-   else{
+   else {
        getNewQuestion()
    }
 }
@@ -701,7 +699,7 @@ function checkAnswer(e) {
      * */
     const myTimeout = setTimeout(function () {
         selectedChoice.parentElement.classList.remove(classToApply);
-        getNewQuestion();
+        nextStep();
     }, 800); //milliseconds after the new question will appear
 
 }
