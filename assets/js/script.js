@@ -526,11 +526,11 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         }
     ];
-
-    choices.forEach((choice) => {
-        choice.addEventListener("click", (e) => checkAnswer(e));
-    });
     
+    for (let choice of choices) {
+    choice.addEventListener("click", (e) => checkAnswer(e));
+}
+
     /**
      * start the choosen character's quiz array
      **  */
@@ -679,6 +679,7 @@ function nextStep(){
    else{
        getNewQuestion()
    }
+}
 
 function checkAnswer(e) {
     if (!acceptingAnswers) return;
@@ -702,6 +703,7 @@ function checkAnswer(e) {
         selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestion();
     }, 800); //milliseconds after the new question will appear
+
 }
 
 /**
@@ -723,6 +725,4 @@ let goHome = function showCharacters() {
 }
 
 homebtn.addEventListener('click', showCharacters, false);
-};
-
 });
