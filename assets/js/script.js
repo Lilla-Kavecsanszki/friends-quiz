@@ -614,7 +614,7 @@ function startGame(characterName) {
         }
     }
 
-    availableQuestions = character.questions;
+    availableQuestions =  [...character.questions];
 
     nextStep();
 }

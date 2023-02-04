@@ -139,10 +139,11 @@ header {
 
 /* cover - text */
 
-#cover-text h1 {
+#the-quiz {
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 3px;
     font-size: 7vw;
+
 }
 
 #cover-text {
@@ -153,7 +154,7 @@ header {
 
 /* choose your character part */
 
-h2 {
+#c-button {
     padding: 2.5% 2%;
     text-align: center;
     font-size: 250%;
@@ -163,8 +164,8 @@ h2 a {
     text-decoration: none;
 }
 
-h2 a:active,
-h2 a:hover {
+#c-button a:active,
+#c-button a:hover {
     background-color: rgba(72, 160, 79, .2);
 }
 
@@ -305,7 +306,7 @@ h2 a:hover {
     margin-left: 3%;
     margin-right: 3%;
     font-size: 140%;
-    letter-spacing: 1, 5px;
+    letter-spacing: 1.5px;
 }
 
 p {
@@ -453,8 +454,8 @@ footer {
 
 .choice-container:hover {
     cursor: pointer;
-    transform: scale(1.02);
-    transform: transform 100ms;
+    transform: scale(1);
+    transform: scale(1.05);
 }
 
 .choice-prefix {
@@ -511,7 +512,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .grid {
@@ -582,56 +583,66 @@ footer {
     #copyright>p {
         padding-bottom: 5%;
 
-}}
+    }
+}
 
 /* screens size from 985px wide and down */
 @media screen and (max-width: 985px) {
     #logo-image {
         height: 400px;
-}}
+    }
+}
 
 /* screens size from 750px wide and down */
 @media screen and (max-width: 750px) {
     #logo-image {
         height: 350px;
     }
-    h2 {
+
+    #instruction-title {
         font-size: 200%;
-    }}
+    }
+}
 
 /* screens size from 670px wide and down */
 @media screen and (max-width: 670px) {
     #logo-image {
         height: 300px;
     }
-    h2 {
+
+    #instruction-title {
         font-size: 150%;
     }
+
     #correct-answers {
         font-size: 200%;
-}
+    }
 }
 
-    /* screens size from 570px wide and down */
+/* screens size from 570px wide and down */
 @media screen and (max-width: 570px) {
     #logo-image {
         height: 260px;
-    }}
+    }
+}
 
-        /* screens size from 470px wide and down */
+/* screens size from 470px wide and down */
 @media screen and (max-width: 470px) {
     #logo-image {
         height: 240px;
-    }}
+    }
+}
 
-       /* screens size from 420px wide and down */
+/* screens size from 420px wide and down */
 @media screen and (max-width: 420px) {
     #logo-image {
         height: 200px;
-    }}
+    }
+}
 
-          /* screens size from 350px wide and down */
+/* screens size from 350px wide and down */
 @media screen and (max-width: 350px) {
     #logo-image {
         height: 200px;
-    }}
+    }
+}

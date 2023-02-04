@@ -289,12 +289,15 @@ Locate the main page of Friends-Quiz repository. Click the fork button in the to
 
 W3C CSS Validator result on the css page
 
+![CSS Validator](readme-images/css-validator.png "CSS Validator")
 
 W3C HTML Validator result on the Home page
 
+![HTML Validator Home page](readme-images/html-validator-home-page.png "HTML Validator Home page")
 
+W3C HTML Validator result on the How to play page
 
-W3
+![HTML Validator How to play page](readme-images/html-validator-how-to-play-page.png "HTML Validator How to play page")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
@@ -322,8 +325,6 @@ I asked friends and family to look at the site on their devices and report any i
 # Credits
 
 
-[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
-
 ## Content
 
 The text for the 'How to Play?' page and the content for the quiz games were a creative work of Georgina Kavecsanszki. 
@@ -345,7 +346,9 @@ https://archive.org/details/tvtunes_31736
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
-## Code
+## Acknowledgments and Code
+
+I received inspiration for this project from my sister's and friends' as well as my own obsessions with the sitcom and I have also checked out works of other students for scope and what's best practice for a Mile stone project 2. 
 
 turkey animation 
 https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B
@@ -377,10 +380,6 @@ https://www.setcorrect.com/portfolio/work11/#:~:text=The%20idea%20was%20to%20use
 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
-
-## Acknowledgments
-
-I received inspiration for this project from my sister's and friends' as well as my own obsessions with the sitcom and I have also checked out works of other students for scope and what's best practice for a Mile stone project 2. 
 
 I also would like to say a big thank you to my mentor Elaine Roche who guided me through this project and gave me the idea of flipping windows and the nested array to keep the file numbers to the minimum after I arrived with roughly 15 files to our second session, as well as some UX tips!
 
