@@ -299,6 +299,10 @@ W3C HTML Validator result on the How to play page
 
 ![HTML Validator How to play page](readme-images/html-validator-how-to-play-page.png "HTML Validator How to play page")
 
+JS Validator results on the js file
+
+![JS Validator](readme-images/js-validator.png "JS Validator")
+
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## Manual Testing
