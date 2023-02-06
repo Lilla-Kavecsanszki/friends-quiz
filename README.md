@@ -140,6 +140,7 @@ I used [A11y](https://color.a11y.com) the Color Contrast Accessibility Validator
 
 [My Colour Palette](https://colorkit.co/palette/f5f5f5-f8d649-48a04f-44aedd-8f4ec4-ed3833-141c1e/)
 
+I picked these specific colours based on the colours and shades that were used in original logos, materials about the sitcom or the closest to those. I did that for the cheerful and fun aesthetics and to hope for an instant reaction and realisation from the visitor.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
@@ -261,7 +262,7 @@ Under the instructions section there is an animated Thanksgiving turkey with sun
 
 # Deployment
 
-The On The Sunny Side website is deployed using Github Pages, this was done by:
+The Friends Quiz website is deployed using Github Pages, this was done by:
 
 1. Login to Github
 2.	Navigate to the account Lilla-Kavecsanszki, and locate the On-The-Sunny-Side repository
@@ -274,8 +275,6 @@ main, and the folder option to /root
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 # Local Deployment
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## How to Clone
 
@@ -461,9 +460,6 @@ https://stackoverflow.com/questions/51572489/playing-sound-on-click-event-with-p
 
 How to add table of content to README file
 https://www.setcorrect.com/portfolio/work11/#:~:text=The%20idea%20was%20to%20use%20Markdown%20bulleted%20lists,bulleted%20%28unordered%29%20list%20in%20Markdown%3A%20%2A%20List%20item
-
-
-[Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 I also would like to say a big thank you to my mentor Elaine Roche who guided me through this project and gave me the idea of flipping windows and the nested array to keep the file numbers to the minimum after I arrived with roughly 15 files to our second session, as well as some UX tips!
 
