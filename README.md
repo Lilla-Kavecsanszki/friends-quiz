@@ -311,17 +311,34 @@ JS Validator results on the js file
 
 ## Manual Testing
 
+Home Page:
+
+Hamburger menu: Go to the "Home" page from a desktop. Change the screen size from desktop to tablet to verify that the hamburger menu is naturally responsive and works as expected, as unfolds and drops down with no issues. During testing there were overcrowding problems here. This was fixed by reducing font-sizes and height. Click on each navigation menu item and verify that it links to the correct page. Hover over the menu buttons and verify the hover colour change work as expected.
+
+Logo image: Go to the "Home" page from a desktop. Reduce and expand the width of the window to confirm that the image responds correctly and looks good.
+
+Cover-text on top of the logo image: Reduce and expand the width of the window to confirm that the text in this section responds correctly and looks good on all device widths. I had to cadjusthange positioning for this on smaller screen sizes to keep its original place and therefore a responsive reaction. 
+
+The window container (#main-window): Reduce and expand the width of the window to confirm that the texts and other elements in this sections respond correctly and look good on all device widths.
+
+Footer: Click on each social media icon to confirm they open in a separate tab for their links. Reduce and expand the width of the window to verify that the footer is responsive and looks good on all device widths.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## User Stories Testing 
 
+1.	As a viewer of the website, I want to easily navigate the site, so I can find what I need (most importantly, the 
+    quiz efficiently.
+2.	As a potential new visitor of the website, I want to understand what the game is about and its rules.
+3.  As a viewer of the website, I want to be able to see my final result and progression in the meantime.
+4.  As an interested observer and/or hiring manager, I want to be able to find the web developer and see other projects 
+    from her on social media and industry relevant sites
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
 ## Further testing
 
-I asked friends and family to look at the site on their devices and report any issues they find. Position of the text in cover-text was adjusted as a result of this on the Home page. They also reported that the dropdown menu doesn't work in an efficient way when viewed on mobile screens with Safari browser. Instead of a simple tap, they have to press the button for a longer period of time in order to drop down. In every other case, it worked perfectly, on Safari desktop screen size including.
+I asked friends and family to look at the site on their devices and browsers and report any issues they find. Height of the logo image was adjusted as a result of this on the Home page and also in media queries respectively. It was covering a few buttons in the middle of page, therefore those didn't work until the issue was resolved. 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
