@@ -366,26 +366,30 @@ Review all functionality and responsiveness on my mobile phone and tablet for al
 
     - Regardless of which page the viewer is on, they can easily find and use the navigation bar, it also stays visible and on top of the screen even while scrolling.
 
-    ![Hamburger bar](readme-images/footer.png "Hamburger bar")
+    ![Hamburger bar](readme-images/1.userstory.png "Hamburger bar")
 
 2.	As a potential new visitor of the website, I want to understand what the game is about and its rules.
 
-    - 
+    - With the usage of the sticky navigation menu the user can easily navigate at any time to the "How to play?" page and read the instructions and purpose of the wesite. 
 
-    ![Hamburger bar](readme-images/footer.png "Hamburger bar")
+    ![Instructions](readme-images/2.userstory.png "Instructions")
 
 3.  As a viewer of the website, I want to be able to see my final result and progression in the meantime.
 
-    - 
+    - After each round, after choosing an answer to the last, tenth question, the user will receive their final points that they achieved with a relevant message along, as well. This information will be displayed in the place of the quiz.
     
-    ![Hamburger bar](readme-images/footer.png "Hamburger bar")
+    ![Final point and message](readme-images/3a%20userstory.png "Final point and message")
+
+    - With the interactive question counter bar and the score counter on the opposite side, the user can keep track of their journey and success in the game.
+    
+    ![Display bar](readme-images/3b%20userstory.png "Display bar")
 
 4.  As an interested observer and/or hiring manager, I want to be able to find the web developer and see other projects 
     from her on social media and industry relevant sites
 
-    -  
+    - Two website link icons can be found in the footer on every page of the website. One takes the visitor to the web developer's LinkedIn profile page and the other to her Github profile page.
     
-    ![Hamburger bar](readme-images/footer.png "Hamburger bar").  
+    ![Social media](readme-images/4.%20userstory.png "Social media").  
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
