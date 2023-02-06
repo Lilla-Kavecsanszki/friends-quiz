@@ -103,7 +103,11 @@ This website:
 
 Home page
 
-![Home page wireframe](readme-images/wireframe_homepage.png "Home page wireframe")
+![Home page wireframe](readme-images/wireframe-homepage.png "Home page wireframe")
+
+How to play? page
+
+![How to play? page wireframe](readme-images/wireframe-howtoplaypage.png "How to play? page wireframe")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
@@ -358,9 +362,11 @@ turkey animation
 https://www.w3schools.com/howto/howto_css_shake_image.asp#:~:text=Learn%20how%20to%20shake%2Fwiggle%20an%20image%20with%20CSS.,last%20for%200.5%20seconds%20%2A%2F%20animation%3A%20shake%200.5s%3B
 
 hamburger menu
+
 https://codepen.io/andreykrokhin/pen/mGEqja
 
 The quiz
+
 The below YouTube video and websites have been used to understand the logic of building a quiz with Javascript. They were also the primary source of encouragement to start off this project.
 
 https://www.youtube.com/watch?v=f4fB9Xg2JEY
