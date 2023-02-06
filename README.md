@@ -313,15 +313,49 @@ JS Validator results on the js file
 
 Home Page:
 
-Hamburger menu: Go to the "Home" page from a desktop. Change the screen size from desktop to tablet to verify that the hamburger menu is naturally responsive and works as expected, as unfolds and drops down with no issues. During testing there were overcrowding problems here. This was fixed by reducing font-sizes and height. Click on each navigation menu item and verify that it links to the correct page. Hover over the menu buttons and verify the hover colour change work as expected.
+Hamburger menu: Go to the "Home" page from a desktop. Change the screen size from desktop to tablet to verify that the hamburger menu is naturally responsive and works as expected, as unfolds and drops down with no issues. Click on each navigation menu item and verify that it links to the correct page. Hover over the menu buttons and verify the hover colour change work as expected.
 
 Logo image: Go to the "Home" page from a desktop. Reduce and expand the width of the window to confirm that the image responds correctly and looks good.
 
-Cover-text on top of the logo image: Reduce and expand the width of the window to confirm that the text in this section responds correctly and looks good on all device widths. I had to cadjusthange positioning for this on smaller screen sizes to keep its original place and therefore a responsive reaction. 
+Cover-text on top of the logo image: Go to the "Home" page from a desktop. Reduce and expand the width of the window to confirm that the text in this section responds correctly and looks good on all device widths. I had to adjust positioning for this on smaller screen sizes to keep its original place and therefore a responsive reaction. 
 
-The window container (#main-window): Reduce and expand the width of the window to confirm that the texts and other elements in this sections respond correctly and look good on all device widths.
+The window container (#main-window): Go to the "Home" page from a desktop. Reduce and expand the width of the window to confirm that the texts and other elements in this sections respond correctly and look good on all device widths.
 
-Footer: Click on each social media icon to confirm they open in a separate tab for their links. Reduce and expand the width of the window to verify that the footer is responsive and looks good on all device widths.
+Let's start link: Reduce and expand the width of the window to confirm that the text responds correctly and looks good on all device widths. Click on the link item and verify that it links to the correct part of the page and takes the user to the character buttons to be able to choose one. Hover over the link and verify the hover colour change work as expected. Click on the link item and the audio starts as expected. The speaker icon at the beginning warns the user that the link will go noisy.
+
+Audio control buttons: Reduce and expand the width of the window to verify that the icon buttons display behave and center as expected and that they look good on all device widths. Hover over the buttons and verify the hover colour change work as expected as well as the zoom out animation. Click the stop button and the audio stops. Click the play button and the audio carries on from where it was stopped beforehand. If the audio finished, clicking the play button would start over the audio from the beginning.
+
+Character buttons: Reduce and expand the width of the window to verify that the character buttons display behave and center as expected and that they look good on all device widths. I had to adjust the flex-direction to column for this on smaller screen sizes to move the buttons under each ohter for readability and a responsive reaction. Hover over the buttons and verify the hover colour change work as expected. Click any of the character buttons and their relevant quiz game will start and the "quiz-window" gets visible to display the quiz. I confirm that after this step the "choosing-window" or the "final-results-window" are not visible. 
+
+"quiz-window":
+Question: Reduce and expand the width of the window to confirm that the text responds correctly and looks good on all device widths. A new question pops up 800 milliseconds after the previous answer has been choosen. 
+
+Answer choice container bars: Reduce and expand the width of the window to confirm that the bars respond correctly and look good on all device widths. Four multiple choice answers display at the same time with the question. Hover over the bars and verify the hover zoom-out works as expected. Click on the correct answer and verify the colour change to green works as expected. Click on the three wrong answers and verify the colour change to red works as expected. Click on any answers at the tenth question and verify that the "final-results-window" gets visible to display the final result of the quiz. I confirm that after this step the "choosing-window" or the "quiz-window" are not visible. 
+
+Score counter: Reduce and expand the width of the window to confirm that the score counter responds correctly, keeps its position and look good on all device widths. Click on the correct answer (answer choice container bars) and verify the score adds 1 point to its previous state. Start a new quiz for the same or different character and verify that the Score number goes back to 0 as a starting value. 
+
+Progress bar: Reduce and expand the width of the window to confirm that the progress bar responds correctly, keeps its position and looks good on all device widths. Click on any of the answers (answer choice container bars) and verify the progress bar adds 1 to the question counter out of 10 and bar's colour-fill grows respectively also based on the percentage. Start a new quiz for the same or different character and verify that the progress bar resturns to its starting positions, that is question 1.
+
+"final-results-window": 
+Final result points: Reduce and expand the width of the window to verify that the text display behaves and centers as expected and that it looks good on all device widths. The number shows the correct result that is the same number as the score counter point after the tenth question was answered. 
+
+Encouragnig message: Reduce and expand the width of the window to verify that the texts display behave and center as expected and that they look good on all device widths. I confirm that the first sentence stays the same at every rounds but the second, encouraging message changes to three different messages based on the achieved final points. Go through the quiz and verify that the "End of the quiz!\n Hooray !! You are a true friend!" gets displayed if the user's final point was 8 or higher. The "End of the quiz!\n Not bad!" message gets displayed if the user's final point was 5 or higher. And the "End of the quiz!\n Better Luck next time!" message gets displayed if the user's final point was 4 or smaller.
+
+Home button:
+
+Footer: Click on each social media icon to confirm they open in a separate tab for their links. Reduce and expand the width of the window to verify that the footer is responsive and looks good on all device widths. I had to adjust padding-bottom for this on smaller screen sizes to keep enough space between the lines for readability and therefore a responsive reaction.
+
+How to play? page:
+
+Hamburger menu: Repeat the verification steps done for the navbar on the Home page. Confirm that the hamburger menu code is identical on all HTML pages.
+
+Go to the "How to play?" page from a desktop. Reduce and expand the width of the window to confirm that the title and all paragraph texts responds correctly, centers as expected and looks good on all device widths. I had to adjust font size and padding-top of the title for this on smaller screen sizes.
+
+Turkey: Reduce and expand the width of the window to verify that the image display behaves and centers as expected and that it looks good on all device widths. The shake animation also works as expected at all times. 
+
+Footer: Repeat the verification steps done for the footer on the Home page. Confirm that the footer code is identical on all HTML pages.
+
+Review all functionality and responsiveness on my mobile phone and tablet for all pages.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
