@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Testing fans of the sitcom on their knowledge of the episodes and characters through a quiz game">
+    <meta name="keywords"
+        content="friends, sitcom, series, tv, quiz, fans, comedy, multiple choice, Rachel, Monica, Phoebe, Ross, Chandler, Joey">
+
     <!--Favicon-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
     <!--Fonts and icons-->
@@ -22,13 +27,14 @@
     <header>
         <div id="hamburger" class="hamburger-menu">
             <input id="menu__toggle" type="checkbox">
-            <label class="menu__btn" for="menu__toggle">
+            <label class="menu__btn" for="menu__toggle" id="menu">Menu
                 <span></span>
             </label>
 
             <ul class="menu__box">
-                <li><a class="menu__item" href="index.html">Home</a></li>
-                <li><a class="menu__item" href="how-to-play.html">How to Play?</a></li>
+                <li><a class="menu__item" href="index.html" aria-label="Go to Home Page">Home</a></li>
+                <li><a class="menu__item" href="how-to-play.html" aria-label="Go to our How to Play? page">How to
+                        Play?</a></li>
             </ul>
         </div>
     </header>
@@ -54,8 +60,8 @@
             <!--start-area-->
             <div id="characters">
                 <div id="control-buttons">
-                    <button id="play"><i class="fa-solid fa-play"></i></button>
-                    <button id="stop"><i class="fa-solid fa-stop"></i></button>
+                    <button id="play">play<i class="fa-solid fa-play"></i></button>
+                    <button id="stop">stop<i class="fa-solid fa-stop"></i></button>
                 </div>
                 <div id="girls">
                     <button class="btn btn-character btn--red">character</button>

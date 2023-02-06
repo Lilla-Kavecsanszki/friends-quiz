@@ -118,9 +118,11 @@ Accessibility has been a very important point for me while designing the website
 
 Lighthouse testing for desktop and mobile has scored 100% for accessibility on both.
 
-![Lighthouse Accessibility](readme-images/accessibility_lighthouse_mobile%26desktop.png "Lighthouse Accessibility")
+![Lighthouse Accessibility](readme-images/accessibility-lighthouse-test.png "Lighthouse Accessibility")
 
 I used [A11y](https://color.a11y.com) the Color Contrast Accessibility Validator which determined that no colour contrast issues were found on any of the pages.
+
+![A11y Test](readme-images/a11y-test.png "A11y Test")
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 

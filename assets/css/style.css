@@ -24,6 +24,10 @@ header {
 
 /* hamburger menu - https://codepen.io/andreykrokhin/pen/mGEqja */
 
+#menu {
+    color: transparent;
+}
+
 #menu__toggle {
     opacity: 0;
 }
@@ -192,6 +196,13 @@ h2 a {
 
 #play {
     margin-right: 1%;
+    background-color: transparent;
+    color: transparent;
+}
+
+#stop {
+    background-color: transparent;
+    color: transparent;
 }
 
 #girls {
@@ -560,6 +571,7 @@ footer {
     transform: scale(1.3);
 }
 
+
 /* Media queries */
 
 /* screens size from 700px wide and down */
@@ -646,3 +658,4 @@ footer {
         height: 200px;
     }
 }
+
