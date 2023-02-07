@@ -402,9 +402,12 @@ I asked friends and family to look at the site on their devices and browsers and
 
 ## Bugs
 
-I had an issue that occurred with the dropdown menu on mobile screens when browsing with Safari. The dropdown menu works, however, the user needs to press the button for a longer period of time in order to reveal the dropdown part. On every other browser, the dropdown menu works perfectly as expected, also on desktop screens when using Safari.
+A few issues came up while testing the website in the meantime; 
 
-I couldn't resolve the issue, unfortunately. It will be a future ambition to resolve this problem.
+1. The encouraging message didn't work properly at some stage. This was an easy fix, as I realised that I was getting the wrong id from the html file, so after this was linked to the correct element.
+2. The question counter was going over the number 10, instead of stopping at it and therefore didn't end the quiz properly. When I wanted to start a new round, the game went back to the end of the previous game. I resolved this issue with zeroing down the questionCounter at the end of the game, so it wouldn't overroll anymore. And a new quiz can start each time, also from question 1 again.
+3. The questions also didn't restart if I wanted to play a new game with the same character as I previously did. This was resolved by the spread operator (...character.questions). Without this the code was pointing to the questions in the original array and later on with using splice method that was deleting the questions from original array, therefore we had no questions left. So to restart the game for the same character, the spread operator creates a copy of the original array. 
+4. While testing the quiz on mobile-sized screens, The let's start button, audio buttons and the Rachel button didn't work. This issue was resolved by adjusting the height of the logo-image (in media queries) as that was covering the mentioned buttons before. 
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 
@@ -454,6 +457,10 @@ https://www.howtogeek.com/devops/using-arrow-functions-in-javascript/#:~:text=An
 https://www.w3schools.com/jsref/jsref_forEach.asp
 
 https://www.sitepoint.com/simple-javascript-quiz/
+
+https://www.tutorialrepublic.com/javascript-tutorial/javascript-arrays.php
+
+https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php
 
 https://www.w3schools.com/jsref/met_win_settimeout.asp
 
