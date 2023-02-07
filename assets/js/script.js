@@ -535,10 +535,9 @@ document.addEventListener("DOMContentLoaded", function () {
     /**
      * start the choosen character's quiz array
      **  */
-
     loadCharacters();
     showCharacters();
-    // startGame();
+    // this is to start the game, as well
 
     // Choose a friend button audio
     let playSoundTrack = function () {
@@ -559,7 +558,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // load the character names 
-
     function loadCharacters() {
         const characters = document.getElementsByClassName("btn-character");
 
@@ -611,7 +609,6 @@ document.addEventListener("DOMContentLoaded", function () {
         displayWindow("quiz-window");
 
         //getting questions for the selected character 
-
         let character = "";
         for (let i = 0; i < quiz.length; i++) {
             if (quiz[i].characterName === characterName) {
@@ -631,13 +628,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function getNewQuestion() {
 
         // Shows the player which question they are at and their progess
-
         questionCounter++;
         progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
         progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS)*100}%`;
 
         // Questions and answers
-
         const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionsIndex];
         question.innerText = currentQuestion.question;
