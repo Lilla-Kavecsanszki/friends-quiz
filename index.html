@@ -50,7 +50,7 @@
     <div id="main-window">
         <div class="window" id="choosing-window">
             <section id="start-area">
-                <h2 id="c-button"><a id="choose-button" href="#characters" aria-label="Go to the Quiz"><i
+                <h2 id="c-button"><a id="choose-button" href="#characters" aria-label="Go to the Quiz, music will play"><i
                             class="fa-solid fa-volume-high"></i>
                         Let's start! Click here to pick your friend!</a></h2>
                 <audio id="myAudio">
@@ -60,18 +60,18 @@
             <!--start-area-->
             <div id="characters">
                 <div id="control-buttons">
-                    <button id="play">play<i class="fa-solid fa-play"></i></button>
-                    <button id="stop">stop<i class="fa-solid fa-stop"></i></button>
+                    <button id="play" aria-label="Play button">play<i class="fa-solid fa-play"></i></button>
+                    <button id="stop" aria-label="Stop button">stop<i class="fa-solid fa-stop"></i></button>
                 </div>
                 <div id="girls">
-                    <button class="btn btn-character btn--red">character</button>
-                    <button class="btn btn-character btn--green">character</button>
-                    <button class="btn btn-character btn--blue">character</button>
+                    <button aria-label="Go to the Rachel Quiz" class="btn btn-character btn--red">character</button>
+                    <button aria-label="Go to the Monica Quiz" class="btn btn-character btn--green">character</button>
+                    <button aria-label="Go to the Phoebe Quiz" class="btn btn-character btn--blue">character</button>
                 </div>
                 <div id="boys">
-                    <button class="btn btn-character btn--red">character</button>
-                    <button class="btn btn-character btn--green">character</button>
-                    <button class="btn btn-character btn--blue">character</button>
+                    <button aria-label="Go to the Ross Quiz" class="btn btn-character btn--red">character</button>
+                    <button aria-label="Go to the Chandler Quiz" class="btn btn-character btn--green">character</button>
+                    <button aria-label="Go to the Joey Quiz" class="btn btn-character btn--blue">character</button>
                 </div>
             </div>
             <!--"characters"-->
@@ -126,7 +126,7 @@
                 <p class="scores"><span id="correct-answers">message</span></p>
             </div>
             <div class="grid">
-                <a id="homebtn" href="#container">Home <i class="fa-solid fa-house"></i></a>
+                <a id="homebtn" aria-label="Go to Home page" href="#container">Home <i class="fa-solid fa-house"></i></a>
             </div>
         </div>
         <!--final-result-area-->
