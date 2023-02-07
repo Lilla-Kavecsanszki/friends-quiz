@@ -402,6 +402,9 @@ I asked friends and family to look at the site on their devices and browsers and
 
 ## Bugs
 
+I had an issue that occurred with the dropdown menu on mobile screens when browsing with Safari. The dropdown menu works, however, the user needs to press the button for a longer period of time in order to reveal the dropdown part. On every other browser, the dropdown menu works perfectly as expected, also on desktop screens when using Safari.
+
+I couldn't resolve the issue, unfortunately. It will be a future ambition to resolve this problem.
 
 [Back to top](https://github.com/Lilla-Kavecsanszki/friends-quiz#contents)
 

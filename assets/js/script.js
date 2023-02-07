@@ -595,6 +595,9 @@ document.addEventListener("DOMContentLoaded", function () {
         displayWindow("choosing-window");
     }
 
+    /**
+     *  show the final result 
+     */
     function showResults() {
         displayWindow("final-results-window");
     }
@@ -650,9 +653,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /**
-     * Checking the correct answer 
+     * end the game and show final result 
      */
-
     function endGame() {
         questionCounter = 0;
         displayWindow("final-results-window");
@@ -673,6 +675,9 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
+    /**
+     * decides whether the game ends or needs a new question
+     */
     function nextStep() {
         if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
             endGame();
@@ -681,6 +686,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    /**
+     * Checking the correct answer 
+     */
     function checkAnswer(e) {
         if (!acceptingAnswers) return;
 
