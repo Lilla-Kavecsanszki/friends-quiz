@@ -24,7 +24,7 @@ header {
 
 /* hamburger menu - https://codepen.io/andreykrokhin/pen/mGEqja */
 
-#menu {
+.menu__btn {
     color: transparent;
 }
 
@@ -231,19 +231,6 @@ h2 a {
     border-radius: 50%;
     font-size: 180%;
     text-decoration: none;
-}
-
-.btn_instructions {
-    background-color: #8f4ec4;
-    color: #141c1e;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-.btn_instructions:active,
-.btn_instructions:hover {
-    background-color: whitesmoke;
-    color: #8f4ec4;
-    border: 3px solid #8f4ec4;
 }
 
 .btn-character {
@@ -563,14 +550,6 @@ footer {
     transform: scale(1);
     transform: scale(1.3);
 }
-
-#homebtn i:active,
-#homebtn i:hover {
-    cursor: pointer;
-    transform: scale(1);
-    transform: scale(1.3);
-}
-
 
 /* Media queries */
 
