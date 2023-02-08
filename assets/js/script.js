@@ -1,7 +1,6 @@
 /* jshint esversion: 6 */
 
 let currentQuestion = {};
-let acceptingAnswers = true;
 let questionCounter = 0;
 let availableQuestions = [];
 const SCORE_POINTS = 1;
@@ -144,7 +143,7 @@ function getNewQuestion() {
         number++;
         choices[i].innerText = currentQuestion['choice' + number];
     }
-
+    let acceptingAnswers = true;
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
 }
@@ -188,7 +187,7 @@ function nextStep() {
  * Checking the correct answer 
  */
 function checkAnswer(e) {
-    
+    let acceptingAnswers = true;
     if (!acceptingAnswers) return;
 
     acceptingAnswers = false;
