@@ -54,7 +54,9 @@ function playMySoundtrack() {
     music.play();
 }
 
-// load the character names 
+/**
+ * load the character names 
+ *  */
 function loadCharacters() {
     const characters = document.getElementsByClassName("btn-character");
 
@@ -102,7 +104,6 @@ function showResults() {
  * */
 function startGame(characterName) {
 
-    const question = document.getElementById('question');
     // show the quiz window
     displayWindow("quiz-window");
 
@@ -129,6 +130,7 @@ function getNewQuestion() {
     const choices = Array.from(document.getElementsByClassName('choice-text'));
     const progressText = document.getElementById('progress-text');
     const progressBarFull = document.getElementById('progressbar-full');
+    let acceptingAnswers = true;
     // Shows the player which question they are at and their progess
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
@@ -143,11 +145,9 @@ function getNewQuestion() {
         number++;
         choices[i].innerText = currentQuestion['choice' + number];
     }
-    let acceptingAnswers = true;
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
 }
-
 
 /**
  * end the game and show final result 
