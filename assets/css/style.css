@@ -561,6 +561,11 @@ footer {
         flex-direction: column
     }
 
+    #girls > button, #boys > button {
+        height: 150px;
+        min-width: 170px;
+    }
+
     #cover-text {
         top: 40%;
         left: 15%;
